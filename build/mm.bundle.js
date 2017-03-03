@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-angular.module('mm', ['ionic', 'mm.core', 'mm.core.comments', 'mm.core.fileuploader', 'mm.core.contentlinks', 'mm.core.course', 'mm.core.courses', 'mm.core.grades', 'mm.core.login', 'mm.core.question', 'mm.core.textviewer', 'mm.core.settings', 'mm.core.sidemenu', 'mm.core.user', 'mm.core.sharedfiles', 'mm.addons.badges', 'mm.addons.calendar', 'mm.addons.competency', 'mm.addons.coursecompletion', 'mm.addons.files', 'mm.addons.frontpage', 'mm.addons.grades', 'mm.addons.messageoutput', 'mm.addons.messages', 'mm.addons.notes', 'mm.addons.notifications', 'mm.addons.participants', 'mm.addons.pushnotifications', 'mm.addons.remotestyles', 'mm.addons.messageoutput_airnotifier', 'mm.addons.mod_assign', 'mm.addons.mod_book', 'mm.addons.mod_chat', 'mm.addons.mod_choice', 'mm.addons.mod_folder', 'mm.addons.mod_forum', 'mm.addons.mod_glossary', 'mm.addons.mod_imscp', 'mm.addons.mod_label', 'mm.addons.mod_lti', 'mm.addons.mod_page', 'mm.addons.mod_quiz', 'mm.addons.mod_resource', 'mm.addons.mod_scorm', 'mm.addons.mod_survey', 'mm.addons.mod_url', 'mm.addons.mod_wiki', 'mm.addons.qbehaviour_adaptive', 'mm.addons.qbehaviour_adaptivenopenalty', 'mm.addons.qbehaviour_deferredcbm', 'mm.addons.qbehaviour_deferredfeedback', 'mm.addons.qbehaviour_immediatecbm', 'mm.addons.qbehaviour_immediatefeedback', 'mm.addons.qbehaviour_informationitem', 'mm.addons.qbehaviour_interactive', 'mm.addons.qbehaviour_interactivecountback', 'mm.addons.qbehaviour_manualgraded', 'mm.addons.qtype_calculated', 'mm.addons.qtype_calculatedmulti', 'mm.addons.qtype_calculatedsimple', 'mm.addons.qtype_ddimageortext', 'mm.addons.qtype_ddmarker', 'mm.addons.qtype_ddwtos', 'mm.addons.qtype_description', 'mm.addons.qtype_match', 'mm.addons.qtype_multianswer', 'mm.addons.qtype_numerical', 'mm.addons.qtype_randomsamatch', 'mm.addons.qtype_essay', 'mm.addons.qtype_truefalse', 'mm.addons.qtype_gapselect', 'mm.addons.qtype_shortanswer', 'mm.addons.userprofilefield_checkbox', 'mm.addons.userprofilefield_datetime', 'mm.addons.userprofilefield_menu', 'mm.addons.userprofilefield_text', 'mm.addons.qtype_multichoice', 'mm.addons.userprofilefield_textarea', 'ngCordova', 'angular-md5', 'pascalprecht.translate', 'ngAria', 'oc.lazyLoad', 'ckeditor',
+angular.module('mm', ['ionic', 'mm.core', 'mm.core.comments', 'mm.core.contentlinks', 'mm.core.course', 'mm.core.courses', 'mm.core.fileuploader', 'mm.core.grades', 'mm.core.login', 'mm.core.question', 'mm.core.settings', 'mm.core.sharedfiles', 'mm.core.sidemenu', 'mm.core.user', 'mm.core.textviewer', 'mm.addons.badges', 'mm.addons.calendar', 'mm.addons.competency', 'mm.addons.coursecompletion', 'mm.addons.files', 'mm.addons.frontpage', 'mm.addons.grades', 'mm.addons.messageoutput', 'mm.addons.messages', 'mm.addons.notes', 'mm.addons.notifications', 'mm.addons.participants', 'mm.addons.pushnotifications', 'mm.addons.remotestyles', 'mm.addons.messageoutput_airnotifier', 'mm.addons.mod_assign', 'mm.addons.mod_book', 'mm.addons.mod_chat', 'mm.addons.mod_choice', 'mm.addons.mod_folder', 'mm.addons.mod_forum', 'mm.addons.mod_glossary', 'mm.addons.mod_imscp', 'mm.addons.mod_label', 'mm.addons.mod_lti', 'mm.addons.mod_page', 'mm.addons.mod_quiz', 'mm.addons.mod_resource', 'mm.addons.mod_scorm', 'mm.addons.mod_survey', 'mm.addons.mod_url', 'mm.addons.mod_wiki', 'mm.addons.qbehaviour_adaptive', 'mm.addons.qbehaviour_adaptivenopenalty', 'mm.addons.qbehaviour_deferredcbm', 'mm.addons.qbehaviour_deferredfeedback', 'mm.addons.qbehaviour_immediatecbm', 'mm.addons.qbehaviour_immediatefeedback', 'mm.addons.qbehaviour_informationitem', 'mm.addons.qbehaviour_interactive', 'mm.addons.qbehaviour_interactivecountback', 'mm.addons.qbehaviour_manualgraded', 'mm.addons.qtype_calculated', 'mm.addons.qtype_calculatedmulti', 'mm.addons.qtype_calculatedsimple', 'mm.addons.qtype_ddimageortext', 'mm.addons.qtype_ddmarker', 'mm.addons.qtype_ddwtos', 'mm.addons.qtype_description', 'mm.addons.qtype_essay', 'mm.addons.qtype_gapselect', 'mm.addons.qtype_match', 'mm.addons.qtype_multianswer', 'mm.addons.qtype_multichoice', 'mm.addons.qtype_numerical', 'mm.addons.qtype_randomsamatch', 'mm.addons.qtype_shortanswer', 'mm.addons.qtype_truefalse', 'mm.addons.userprofilefield_datetime', 'mm.addons.userprofilefield_menu', 'mm.addons.userprofilefield_text', 'mm.addons.userprofilefield_textarea', 'mm.addons.userprofilefield_checkbox', 'ngCordova', 'angular-md5', 'pascalprecht.translate', 'ngAria', 'oc.lazyLoad', 'ckeditor',
             'ngMessages'])
 .run(["$ionicPlatform", function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -10594,33 +10594,6 @@ angular.module('mm.core.comments', [])
     });
 }]);
 
-angular.module('mm.core.fileuploader', ['mm.core'])
-.constant('mmFileUploaderAlbumPriority', 2000)
-.constant('mmFileUploaderCameraPriority', 1800)
-.constant('mmFileUploaderAudioPriority', 1600)
-.constant('mmFileUploaderVideoPriority', 1400)
-.constant('mmFileUploaderFilePriority', 1200)
-.config(["$mmFileUploaderDelegateProvider", "mmFileUploaderAlbumPriority", "mmFileUploaderCameraPriority", "mmFileUploaderAudioPriority", "mmFileUploaderVideoPriority", "mmFileUploaderFilePriority", function($mmFileUploaderDelegateProvider, mmFileUploaderAlbumPriority, mmFileUploaderCameraPriority,
-            mmFileUploaderAudioPriority, mmFileUploaderVideoPriority, mmFileUploaderFilePriority) {
-    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderAlbum',
-                '$mmFileUploaderHandlers.albumFilePicker', mmFileUploaderAlbumPriority);
-    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderCamera',
-                '$mmFileUploaderHandlers.cameraFilePicker', mmFileUploaderCameraPriority);
-    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderAudio',
-                '$mmFileUploaderHandlers.audioFilePicker', mmFileUploaderAudioPriority);
-    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderVideo',
-                '$mmFileUploaderHandlers.videoFilePicker', mmFileUploaderVideoPriority);
-    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderFile',
-                '$mmFileUploaderHandlers.filePicker', mmFileUploaderFilePriority);
-}])
-.run(["$mmEvents", "mmCoreEventLogin", "mmCoreEventSiteUpdated", "mmCoreEventLogout", "$mmFileUploaderDelegate", "mmCoreEventRemoteAddonsLoaded", function($mmEvents, mmCoreEventLogin, mmCoreEventSiteUpdated, mmCoreEventLogout, $mmFileUploaderDelegate,
-            mmCoreEventRemoteAddonsLoaded) {
-    $mmEvents.on(mmCoreEventLogin, $mmFileUploaderDelegate.updateHandlers);
-    $mmEvents.on(mmCoreEventSiteUpdated, $mmFileUploaderDelegate.updateHandlers);
-    $mmEvents.on(mmCoreEventRemoteAddonsLoaded, $mmFileUploaderDelegate.updateHandlers);
-    $mmEvents.on(mmCoreEventLogout, $mmFileUploaderDelegate.clearSiteHandlers);
-}]);
-
 angular.module('mm.core.contentlinks', [])
 .config(["$stateProvider", function($stateProvider) {
     $stateProvider
@@ -10775,6 +10748,33 @@ angular.module('mm.core.courses', ['mm.core.contentlinks'])
         $mmCoursesDelegate.clearCoursesHandlers();
         $mmCourses.clearCurrentCourses();
     });
+}]);
+
+angular.module('mm.core.fileuploader', ['mm.core'])
+.constant('mmFileUploaderAlbumPriority', 2000)
+.constant('mmFileUploaderCameraPriority', 1800)
+.constant('mmFileUploaderAudioPriority', 1600)
+.constant('mmFileUploaderVideoPriority', 1400)
+.constant('mmFileUploaderFilePriority', 1200)
+.config(["$mmFileUploaderDelegateProvider", "mmFileUploaderAlbumPriority", "mmFileUploaderCameraPriority", "mmFileUploaderAudioPriority", "mmFileUploaderVideoPriority", "mmFileUploaderFilePriority", function($mmFileUploaderDelegateProvider, mmFileUploaderAlbumPriority, mmFileUploaderCameraPriority,
+            mmFileUploaderAudioPriority, mmFileUploaderVideoPriority, mmFileUploaderFilePriority) {
+    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderAlbum',
+                '$mmFileUploaderHandlers.albumFilePicker', mmFileUploaderAlbumPriority);
+    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderCamera',
+                '$mmFileUploaderHandlers.cameraFilePicker', mmFileUploaderCameraPriority);
+    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderAudio',
+                '$mmFileUploaderHandlers.audioFilePicker', mmFileUploaderAudioPriority);
+    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderVideo',
+                '$mmFileUploaderHandlers.videoFilePicker', mmFileUploaderVideoPriority);
+    $mmFileUploaderDelegateProvider.registerHandler('mmFileUploaderFile',
+                '$mmFileUploaderHandlers.filePicker', mmFileUploaderFilePriority);
+}])
+.run(["$mmEvents", "mmCoreEventLogin", "mmCoreEventSiteUpdated", "mmCoreEventLogout", "$mmFileUploaderDelegate", "mmCoreEventRemoteAddonsLoaded", function($mmEvents, mmCoreEventLogin, mmCoreEventSiteUpdated, mmCoreEventLogout, $mmFileUploaderDelegate,
+            mmCoreEventRemoteAddonsLoaded) {
+    $mmEvents.on(mmCoreEventLogin, $mmFileUploaderDelegate.updateHandlers);
+    $mmEvents.on(mmCoreEventSiteUpdated, $mmFileUploaderDelegate.updateHandlers);
+    $mmEvents.on(mmCoreEventRemoteAddonsLoaded, $mmFileUploaderDelegate.updateHandlers);
+    $mmEvents.on(mmCoreEventLogout, $mmFileUploaderDelegate.clearSiteHandlers);
 }]);
 
 angular.module('mm.core.grades', [])
@@ -11128,27 +11128,6 @@ angular.module('mm.core.question', [])
 	$mmEvents.on(mmCoreEventRemoteAddonsLoaded, updateHandlers);
 }]);
 
-angular.module('mm.core.textviewer', [])
-.config(["$stateProvider", function($stateProvider) {
-    $stateProvider
-    .state('site.mm_textviewer', {
-        url: '/mm_textviewer',
-        params: {
-            title: null,
-            content: null,
-            replacelinebreaks: null,
-            component: null,
-            componentId: null
-        },
-        views: {
-            'site': {
-                templateUrl: 'core/components/textviewer/templates/textviewer.html',
-                controller: 'mmTextViewerIndexCtrl'
-            }
-        }
-    });
-}]);
-
 angular.module('mm.core.settings', [])
 .constant('mmCoreSettingsReportInBackground', 'mmCoreReportInBackground')
 .constant('mmCoreSettingsRichTextEditor', 'mmCoreSettingsRichTextEditor')
@@ -11207,6 +11186,53 @@ angular.module('mm.core.settings', [])
     $mmEvents.on(mmCoreEventSiteUpdated, $mmSettingsDelegate.updateHandlers);
     $mmEvents.on(mmCoreEventRemoteAddonsLoaded, $mmSettingsDelegate.updateHandlers);
     $mmEvents.on(mmCoreEventLogout, $mmSettingsDelegate.clearSiteHandlers);
+}]);
+
+angular.module('mm.core.sharedfiles', ['mm.core'])
+.constant('mmSharedFilesFolder', 'sharedfiles')
+.constant('mmSharedFilesStore', 'shared_files')
+.constant('mmSharedFilesEventFileShared', 'file_shared')
+.constant('mmSharedFilesPickerPriority', 1000)
+.config(["$stateProvider", "$mmFileUploaderDelegateProvider", "mmSharedFilesPickerPriority", function($stateProvider, $mmFileUploaderDelegateProvider, mmSharedFilesPickerPriority) {
+    var chooseSiteState = {
+            url: '/sharedfiles-choose-site',
+            params: {
+                filepath: null
+            }
+        },
+        chooseSiteView = {
+            controller: 'mmSharedFilesChooseSiteCtrl',
+            templateUrl: 'core/components/sharedfiles/templates/choosesite.html'
+        };
+    $stateProvider
+    .state('site.sharedfiles-choose-site', angular.extend(angular.copy(chooseSiteState), {
+        views: {
+            'site': chooseSiteView
+        }
+    }))
+    .state('mm_login.sharedfiles-choose-site', angular.extend(angular.copy(chooseSiteState), chooseSiteView))
+    .state('site.sharedfiles-list', {
+        url: '/sharedfiles-list',
+        params: {
+            path: null,
+            manage: false,
+            pick: false
+        },
+        views: {
+            'site': {
+                templateUrl: 'core/components/sharedfiles/templates/list.html',
+                controller: 'mmSharedFilesListCtrl'
+            }
+        }
+    });
+    $mmFileUploaderDelegateProvider.registerHandler('mmSharedFiles',
+                '$mmSharedFilesHandlers.filePicker', mmSharedFilesPickerPriority);
+}])
+.run(["$mmSharedFilesHelper", "$ionicPlatform", function($mmSharedFilesHelper, $ionicPlatform) {
+    if (ionic.Platform.isIOS()) {
+        $ionicPlatform.on('resume', $mmSharedFilesHelper.searchIOSNewSharedFiles);
+        $mmSharedFilesHelper.searchIOSNewSharedFiles();
+    }
 }]);
 
 angular.module('mm.core.sidemenu', [])
@@ -11316,51 +11342,25 @@ angular.module('mm.core.user', ['mm.core.contentlinks'])
     });
 }]);
 
-angular.module('mm.core.sharedfiles', ['mm.core'])
-.constant('mmSharedFilesFolder', 'sharedfiles')
-.constant('mmSharedFilesStore', 'shared_files')
-.constant('mmSharedFilesEventFileShared', 'file_shared')
-.constant('mmSharedFilesPickerPriority', 1000)
-.config(["$stateProvider", "$mmFileUploaderDelegateProvider", "mmSharedFilesPickerPriority", function($stateProvider, $mmFileUploaderDelegateProvider, mmSharedFilesPickerPriority) {
-    var chooseSiteState = {
-            url: '/sharedfiles-choose-site',
-            params: {
-                filepath: null
-            }
-        },
-        chooseSiteView = {
-            controller: 'mmSharedFilesChooseSiteCtrl',
-            templateUrl: 'core/components/sharedfiles/templates/choosesite.html'
-        };
+angular.module('mm.core.textviewer', [])
+.config(["$stateProvider", function($stateProvider) {
     $stateProvider
-    .state('site.sharedfiles-choose-site', angular.extend(angular.copy(chooseSiteState), {
-        views: {
-            'site': chooseSiteView
-        }
-    }))
-    .state('mm_login.sharedfiles-choose-site', angular.extend(angular.copy(chooseSiteState), chooseSiteView))
-    .state('site.sharedfiles-list', {
-        url: '/sharedfiles-list',
+    .state('site.mm_textviewer', {
+        url: '/mm_textviewer',
         params: {
-            path: null,
-            manage: false,
-            pick: false
+            title: null,
+            content: null,
+            replacelinebreaks: null,
+            component: null,
+            componentId: null
         },
         views: {
             'site': {
-                templateUrl: 'core/components/sharedfiles/templates/list.html',
-                controller: 'mmSharedFilesListCtrl'
+                templateUrl: 'core/components/textviewer/templates/textviewer.html',
+                controller: 'mmTextViewerIndexCtrl'
             }
         }
     });
-    $mmFileUploaderDelegateProvider.registerHandler('mmSharedFiles',
-                '$mmSharedFilesHandlers.filePicker', mmSharedFilesPickerPriority);
-}])
-.run(["$mmSharedFilesHelper", "$ionicPlatform", function($mmSharedFilesHelper, $ionicPlatform) {
-    if (ionic.Platform.isIOS()) {
-        $ionicPlatform.on('resume', $mmSharedFilesHelper.searchIOSNewSharedFiles);
-        $mmSharedFilesHelper.searchIOSNewSharedFiles();
-    }
 }]);
 
 angular.module('mm.core.comments')
@@ -21561,6 +21561,16 @@ angular.module('mm.addons.qtype_description', ['mm.core'])
     $mmQuestionDelegateProvider.registerHandler('mmaQtypeDescription', 'qtype_description', '$mmaQtypeDescriptionHandler');
 }]);
 
+angular.module('mm.addons.qtype_essay', ['mm.core'])
+.config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
+    $mmQuestionDelegateProvider.registerHandler('mmaQtypeEssay', 'qtype_essay', '$mmaQtypeEssayHandler');
+}]);
+
+angular.module('mm.addons.qtype_gapselect', ['mm.core'])
+.config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
+    $mmQuestionDelegateProvider.registerHandler('mmaQtypeGapSelect', 'qtype_gapselect', '$mmaQtypeGapSelectHandler');
+}]);
+
 angular.module('mm.addons.qtype_match', ['mm.core'])
 .config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
     $mmQuestionDelegateProvider.registerHandler('mmaQtypeMatch', 'qtype_match', '$mmaQtypeMatchHandler');
@@ -21569,6 +21579,11 @@ angular.module('mm.addons.qtype_match', ['mm.core'])
 angular.module('mm.addons.qtype_multianswer', ['mm.core'])
 .config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
     $mmQuestionDelegateProvider.registerHandler('mmaQtypeMultianswer', 'qtype_multianswer', '$mmaQtypeMultianswerHandler');
+}]);
+
+angular.module('mm.addons.qtype_multichoice', ['mm.core'])
+.config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
+    $mmQuestionDelegateProvider.registerHandler('mmaQtypeMultichoice', 'qtype_multichoice', '$mmaQtypeMultichoiceHandler');
 }]);
 
 angular.module('mm.addons.qtype_numerical', ['mm.core'])
@@ -21581,30 +21596,14 @@ angular.module('mm.addons.qtype_randomsamatch', ['mm.core'])
     $mmQuestionDelegateProvider.registerHandler('mmaQtypeRandomSaMatch', 'qtype_randomsamatch', '$mmaQtypeRandomSaMatchHandler');
 }]);
 
-angular.module('mm.addons.qtype_essay', ['mm.core'])
-.config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
-    $mmQuestionDelegateProvider.registerHandler('mmaQtypeEssay', 'qtype_essay', '$mmaQtypeEssayHandler');
-}]);
-
-angular.module('mm.addons.qtype_truefalse', ['mm.core'])
-.config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
-    $mmQuestionDelegateProvider.registerHandler('mmaQtypeTruefalse', 'qtype_truefalse', '$mmaQtypeTruefalseHandler');
-}]);
-
-angular.module('mm.addons.qtype_gapselect', ['mm.core'])
-.config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
-    $mmQuestionDelegateProvider.registerHandler('mmaQtypeGapSelect', 'qtype_gapselect', '$mmaQtypeGapSelectHandler');
-}]);
-
 angular.module('mm.addons.qtype_shortanswer', ['mm.core'])
 .config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
     $mmQuestionDelegateProvider.registerHandler('mmaQtypeShortAnswer', 'qtype_shortanswer', '$mmaQtypeShortAnswerHandler');
 }]);
 
-angular.module('mm.addons.userprofilefield_checkbox', ['mm.core'])
-.config(["$mmUserProfileFieldsDelegateProvider", function($mmUserProfileFieldsDelegateProvider) {
-    $mmUserProfileFieldsDelegateProvider.registerHandler('mmaUserProfileFieldCheckbox',
-    		'checkbox', '$mmaUserProfileFieldCheckboxHandler');
+angular.module('mm.addons.qtype_truefalse', ['mm.core'])
+.config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
+    $mmQuestionDelegateProvider.registerHandler('mmaQtypeTruefalse', 'qtype_truefalse', '$mmaQtypeTruefalseHandler');
 }]);
 
 angular.module('mm.addons.userprofilefield_datetime', ['mm.core'])
@@ -21625,15 +21624,16 @@ angular.module('mm.addons.userprofilefield_text', ['mm.core'])
     		'text', '$mmaUserProfileFieldTextHandler');
 }]);
 
-angular.module('mm.addons.qtype_multichoice', ['mm.core'])
-.config(["$mmQuestionDelegateProvider", function($mmQuestionDelegateProvider) {
-    $mmQuestionDelegateProvider.registerHandler('mmaQtypeMultichoice', 'qtype_multichoice', '$mmaQtypeMultichoiceHandler');
-}]);
-
 angular.module('mm.addons.userprofilefield_textarea', ['mm.core'])
 .config(["$mmUserProfileFieldsDelegateProvider", function($mmUserProfileFieldsDelegateProvider) {
     $mmUserProfileFieldsDelegateProvider.registerHandler('mmaUserProfileFieldTextarea',
     		'textarea', '$mmaUserProfileFieldTextareaHandler');
+}]);
+
+angular.module('mm.addons.userprofilefield_checkbox', ['mm.core'])
+.config(["$mmUserProfileFieldsDelegateProvider", function($mmUserProfileFieldsDelegateProvider) {
+    $mmUserProfileFieldsDelegateProvider.registerHandler('mmaUserProfileFieldCheckbox',
+    		'checkbox', '$mmaUserProfileFieldCheckboxHandler');
 }]);
 
 angular.module('mm.addons.mod_assign')
@@ -21863,65 +21863,6 @@ angular.module('mm.addons.mod_assign')
     var $mmaModAssignFeedbackDelegate = $mmAddonManager.get('$mmaModAssignFeedbackDelegate');
     if ($mmaModAssignFeedbackDelegate) {
         $mmaModAssignFeedbackDelegate.registerHandler('mmaModAssignFeedbackFile', 'file', '$mmaModAssignFeedbackFileHandler');
-    }
-}]);
-
-angular.module('mm.addons.mod_assign')
-.directive('mmaModAssignSubmissionComments', ["$state", "$mmComments", "mmaModAssignSubmissionInvalidatedEvent", function($state, $mmComments, mmaModAssignSubmissionInvalidatedEvent) {
-    return {
-        restrict: 'A',
-        priority: 100,
-        templateUrl: 'addons/mod/assign/submission/comments/template.html',
-        link: function(scope) {
-            scope.showComments = function() {
-                var params = {
-                    contextLevel: 'module',
-                    instanceId: scope.cmid,
-                    component: 'assignsubmission_comments',
-                    itemId: scope.submissionId,
-                    area: 'submission_comments',
-                    title: scope.plugin.name
-                };
-                $state.go('site.mm_commentviewer', params);
-            };
-            scope.submissionId = scope.submission.id;
-            scope.cmid = scope.assign.cmid;
-            var obsLoaded = scope.$on(mmaModAssignSubmissionInvalidatedEvent, function() {
-                $mmComments.invalidateCommentsData('module', scope.cmid, 'assignsubmission_comments', scope.submissionId,
-                    'submission_comments');
-            });
-            scope.$on('$destroy', obsLoaded);
-        }
-    };
-}]);
-
-angular.module('mm.addons.mod_assign')
-.factory('$mmaModAssignSubmissionCommentsHandler', ["$mmComments", function($mmComments) {
-    var self = {};
-        self.canEditOffline = function(assign, submission, plugin) {
-        return true;
-    };
-        self.isEnabled = function() {
-        return $mmComments.isPluginEnabled();
-    };
-        self.isEnabledForEdit = function() {
-        return true;
-    };
-        self.getDirectiveName = function(plugin, edit) {
-        return edit ? false : 'mma-mod-assign-submission-comments';
-    };
-        self.prefetch = function(assign, submission, plugin, siteId) {
-        return $mmComments.getComments('module', assign.cmid, 'assignsubmission_comments', submission.id,
-                    'submission_comments', 0, siteId).catch(function() {
-        });
-    };
-    return self;
-}])
-.run(["$mmAddonManager", function($mmAddonManager) {
-    var $mmaModAssignSubmissionDelegate = $mmAddonManager.get('$mmaModAssignSubmissionDelegate');
-    if ($mmaModAssignSubmissionDelegate) {
-        $mmaModAssignSubmissionDelegate.registerHandler('mmaModAssignSubmissionComments', 'comments',
-                                '$mmaModAssignSubmissionCommentsHandler');
     }
 }]);
 
@@ -22341,6 +22282,65 @@ angular.module('mm.addons.mod_assign')
     if ($mmaModAssignSubmissionDelegate) {
         $mmaModAssignSubmissionDelegate.registerHandler('mmaModAssignSubmissionOnlinetext', 'onlinetext',
                                 '$mmaModAssignSubmissionOnlinetextHandler');
+    }
+}]);
+
+angular.module('mm.addons.mod_assign')
+.directive('mmaModAssignSubmissionComments', ["$state", "$mmComments", "mmaModAssignSubmissionInvalidatedEvent", function($state, $mmComments, mmaModAssignSubmissionInvalidatedEvent) {
+    return {
+        restrict: 'A',
+        priority: 100,
+        templateUrl: 'addons/mod/assign/submission/comments/template.html',
+        link: function(scope) {
+            scope.showComments = function() {
+                var params = {
+                    contextLevel: 'module',
+                    instanceId: scope.cmid,
+                    component: 'assignsubmission_comments',
+                    itemId: scope.submissionId,
+                    area: 'submission_comments',
+                    title: scope.plugin.name
+                };
+                $state.go('site.mm_commentviewer', params);
+            };
+            scope.submissionId = scope.submission.id;
+            scope.cmid = scope.assign.cmid;
+            var obsLoaded = scope.$on(mmaModAssignSubmissionInvalidatedEvent, function() {
+                $mmComments.invalidateCommentsData('module', scope.cmid, 'assignsubmission_comments', scope.submissionId,
+                    'submission_comments');
+            });
+            scope.$on('$destroy', obsLoaded);
+        }
+    };
+}]);
+
+angular.module('mm.addons.mod_assign')
+.factory('$mmaModAssignSubmissionCommentsHandler', ["$mmComments", function($mmComments) {
+    var self = {};
+        self.canEditOffline = function(assign, submission, plugin) {
+        return true;
+    };
+        self.isEnabled = function() {
+        return $mmComments.isPluginEnabled();
+    };
+        self.isEnabledForEdit = function() {
+        return true;
+    };
+        self.getDirectiveName = function(plugin, edit) {
+        return edit ? false : 'mma-mod-assign-submission-comments';
+    };
+        self.prefetch = function(assign, submission, plugin, siteId) {
+        return $mmComments.getComments('module', assign.cmid, 'assignsubmission_comments', submission.id,
+                    'submission_comments', 0, siteId).catch(function() {
+        });
+    };
+    return self;
+}])
+.run(["$mmAddonManager", function($mmAddonManager) {
+    var $mmaModAssignSubmissionDelegate = $mmAddonManager.get('$mmaModAssignSubmissionDelegate');
+    if ($mmaModAssignSubmissionDelegate) {
+        $mmaModAssignSubmissionDelegate.registerHandler('mmaModAssignSubmissionComments', 'comments',
+                                '$mmaModAssignSubmissionCommentsHandler');
     }
 }]);
 
@@ -37044,770 +37044,6 @@ angular.module('mm.addons.mod_folder')
 }]);
 
 angular.module('mm.addons.mod_forum')
-.controller('mmaModForumDiscussionCtrl', ["$q", "$scope", "$stateParams", "$mmaModForum", "$mmSite", "$mmUtil", "$translate", "$mmEvents", "$ionicScrollDelegate", "mmaModForumComponent", "mmaModForumReplyDiscussionEvent", "$mmaModForumOffline", "$mmaModForumSync", "mmaModForumAutomSyncedEvent", "mmaModForumManualSyncedEvent", "$mmApp", "$ionicPlatform", "mmCoreEventOnlineStatusChanged", "$mmaModForumHelper", "$mmFileUploaderHelper", function($q, $scope, $stateParams, $mmaModForum, $mmSite, $mmUtil, $translate, $mmEvents,
-            $ionicScrollDelegate, mmaModForumComponent, mmaModForumReplyDiscussionEvent, $mmaModForumOffline, $mmaModForumSync,
-            mmaModForumAutomSyncedEvent, mmaModForumManualSyncedEvent, $mmApp, $ionicPlatform, mmCoreEventOnlineStatusChanged,
-            $mmaModForumHelper, $mmFileUploaderHelper) {
-    var discussionId = $stateParams.discussionid,
-        courseId = $stateParams.cid,
-        forumId = $stateParams.forumid,
-        cmid = $stateParams.cmid,
-        scrollView,
-        syncObserver, syncManualObserver, onlineObserver;
-    $mmUtil.blockLeaveView($scope, leaveView);
-    $scope.sortTypeFlatNewest = 'flat-newest';
-    $scope.sortTypeFlatOldest = 'flat-oldest';
-    $scope.sortTypeNested = 'nested';
-    $scope.discussionId = discussionId;
-    $scope.trackPosts = $stateParams.trackposts;
-    $scope.component = mmaModForumComponent;
-    $scope.discussionStr = $translate.instant('discussion');
-    $scope.componentId = cmid;
-    $scope.courseId = courseId;
-    $scope.refreshPostsIcon = 'spinner';
-    $scope.syncIcon = 'spinner';
-    $scope.newPost = {
-        replyingto: undefined,
-        editing: undefined,
-        subject: '',
-        text: '',
-        isEditing: false,
-        files: []
-    };
-    $scope.sort = $scope.sortTypeFlatOldest;
-    $scope.locked = !!$stateParams.locked;
-    $scope.originalData = {};
-    function fetchForum() {
-        if (courseId && cmid) {
-            return $mmaModForum.getForum(courseId, cmid);
-        } else if (courseId && forumId) {
-            return $mmaModForum.getForumById(courseId, forumId);
-        } else {
-            return $q.reject();
-        }
-    }
-    function fetchPosts(sync, showErrors) {
-        var syncPromise,
-            onlinePosts = [],
-            offlineReplies = [];
-        $scope.isOnline = $mmApp.isOnline();
-        $scope.isTablet = $ionicPlatform.isTablet();
-        if (sync) {
-            syncPromise = syncDiscussion(showErrors).catch(function() {
-            });
-        } else {
-            syncPromise = $q.when();
-        }
-        return syncPromise.then(function() {
-            return $mmaModForum.getDiscussionPosts(discussionId).then(function(posts) {
-                onlinePosts = posts;
-            }).then(function() {
-                return $mmaModForumOffline.getDiscussionReplies(discussionId).then(function(replies) {
-                    $scope.postHasOffline = !!replies.length;
-                    var convertPromises = [];
-                    var posts = {};
-                    angular.forEach(onlinePosts, function(post) {
-                        posts[post.id] = post;
-                    });
-                    angular.forEach(replies, function(offlineReply) {
-                        if (!forumId) {
-                            forumId = offlineReply.forumid;
-                        }
-                        if (!courseId) {
-                            courseId = offlineReply.courseid;
-                            $scope.courseId = courseId;
-                        }
-                        convertPromises.push($mmaModForumHelper.convertOfflineReplyToOnline(offlineReply).then(function(reply) {
-                            offlineReplies.push(reply);
-                            posts[reply.parent].canreply = false;
-                        }));
-                    });
-                    return $q.all(convertPromises).then(function() {
-                        onlinePosts = Object.keys(posts).map(function (key) {return posts[key];});
-                    });
-                });
-            });
-        }).then(function() {
-            var posts = offlineReplies.concat(onlinePosts);
-            $scope.discussion = $mmaModForum.extractStartingPost(posts);
-            if ($scope.sort == $scope.sortTypeNested) {
-                posts = $mmaModForum.sortDiscussionPosts(posts, 'ASC');
-                $scope.posts = $mmUtil.formatTree(posts, 'parent', 'id', $scope.discussion.id);
-            } else {
-                var direction = $scope.sort == $scope.sortTypeFlatNewest ? 'DESC' : 'ASC';
-                $scope.posts = $mmaModForum.sortDiscussionPosts(posts, direction);
-            }
-            $scope.defaultSubject = $translate.instant('mma.mod_forum.re') + ' ' + $scope.discussion.subject;
-            $scope.newPost.subject = $scope.defaultSubject;
-            return fetchForum().then(function(forum) {
-                if ($scope.discussion.userfullname && $scope.discussion.parent == 0 && forum.type == 'single') {
-                    $scope.discussion.userfullname = null;
-                }
-                forumId = forum.id;
-                cmid = forum.cmid;
-                $scope.componentId = cmid;
-                $scope.forum = forum;
-            }).catch(function() {
-            });
-        }).catch(function(message) {
-            $mmUtil.showErrorModal(message);
-            return $q.reject();
-        }).finally(function() {
-            $scope.discussionLoaded = true;
-            $scope.refreshPostsIcon = 'ion-refresh';
-            $scope.syncIcon = 'ion-loop';
-        });
-    }
-    $scope.changeSort = function(type) {
-        $scope.discussionLoaded = false;
-        scrollTop();
-        $scope.sort = type;
-        return fetchPosts();
-    };
-    function syncDiscussion(showErrors) {
-        return $mmaModForumSync.syncDiscussionReplies(discussionId).then(function(result) {
-            if (result.warnings && result.warnings.length) {
-                $mmUtil.showErrorModal(result.warnings[0]);
-            }
-            if (result && result.updated) {
-                $mmEvents.trigger(mmaModForumManualSyncedEvent, {
-                    siteid: $mmSite.getId(),
-                    forumid: forumId,
-                    userid: $mmSite.getUserId(),
-                    warnings: result.warnings
-                });
-            }
-            return result.updated;
-        }).catch(function(error) {
-            if (showErrors) {
-                if (error) {
-                    $mmUtil.showErrorModal(error);
-                } else {
-                    $mmUtil.showErrorModal('mm.core.errorsync', true);
-                }
-            }
-            return $q.reject();
-        });
-    }
-    function refreshPosts(sync, showErrors) {
-        scrollTop();
-        $scope.refreshPostsIcon = 'spinner';
-        $scope.syncIcon = 'spinner';
-        return $mmaModForum.invalidateDiscussionPosts(discussionId).finally(function() {
-            return fetchPosts(sync, showErrors);
-        });
-    }
-    function notifyPostListChanged() {
-        var data = {
-            forumid: forumId,
-            discussionid: discussionId,
-            cmid: cmid
-        };
-        $mmEvents.trigger(mmaModForumReplyDiscussionEvent, data);
-    }
-    fetchPosts(true).then(function() {
-        $mmaModForum.logDiscussionView(discussionId);
-    });
-    $scope.refreshPosts = function(showErrors) {
-        if ($scope.discussionLoaded) {
-            return refreshPosts(true, showErrors).finally(function() {
-                $scope.$broadcast('scroll.refreshComplete');
-            });
-        }
-    };
-    syncObserver = $mmEvents.on(mmaModForumAutomSyncedEvent, function(data) {
-        if (data && data.siteid == $mmSite.getId() && data.forumid == forumId && data.userid == $mmSite.getUserId() &&
-                discussionId == data.discussionid) {
-            $scope.discussionLoaded = false;
-            refreshPosts(false);
-        }
-    });
-    onlineObserver = $mmEvents.on(mmCoreEventOnlineStatusChanged, function(online) {
-        $scope.isOnline = online;
-    });
-    syncManualObserver = $mmEvents.on(mmaModForumManualSyncedEvent, function(data) {
-        if (data && data.siteid == $mmSite.getId() && data.forumid == forumId && data.userid == $mmSite.getUserId()) {
-            $scope.discussionLoaded = false;
-            refreshPosts(false);
-        }
-    });
-    function leaveView() {
-        var promise;
-        if (!$mmaModForumHelper.hasPostDataChanged($scope.newPost, $scope.originalData)) {
-            promise = $q.when();
-        } else {
-            promise = $mmUtil.showConfirm($translate('mm.core.confirmcanceledit'));
-        }
-        return promise.then(function() {
-            $mmFileUploaderHelper.clearTmpFiles($scope.newPost.files);
-        });
-    }
-    function scrollTop() {
-        if (!scrollView) {
-            scrollView = $ionicScrollDelegate.$getByHandle('mmaModForumPostsScroll');
-        }
-        scrollView && scrollView.scrollTop && scrollView.scrollTop();
-    }
-    $scope.postListChanged = function() {
-        notifyPostListChanged();
-        $scope.discussionLoaded = false;
-        refreshPosts(false).finally(function() {
-            $scope.discussionLoaded = true;
-        });
-    };
-    $scope.$on('$destroy', function(){
-        syncObserver && syncObserver.off && syncObserver.off();
-        syncManualObserver && syncManualObserver.off && syncManualObserver.off();
-        onlineObserver && onlineObserver.off && onlineObserver.off();
-    });
-}]);
-
-angular.module('mm.addons.mod_forum')
-.controller('mmaModForumDiscussionsCtrl', ["$q", "$scope", "$stateParams", "$mmaModForum", "$mmCourse", "$mmUtil", "$mmGroups", "$mmUser", "$mmEvents", "$ionicScrollDelegate", "$ionicPlatform", "mmUserProfileState", "mmaModForumNewDiscussionEvent", "$mmSite", "$translate", "mmaModForumReplyDiscussionEvent", "$mmText", "mmaModForumComponent", "$mmaModForumOffline", "$mmaModForumSync", "$mmCourseHelper", "mmaModForumAutomSyncedEvent", "mmaModForumManualSyncedEvent", "$mmApp", "mmCoreEventOnlineStatusChanged", function($q, $scope, $stateParams, $mmaModForum, $mmCourse, $mmUtil, $mmGroups, $mmUser,
-            $mmEvents, $ionicScrollDelegate, $ionicPlatform, mmUserProfileState, mmaModForumNewDiscussionEvent, $mmSite, $translate,
-            mmaModForumReplyDiscussionEvent, $mmText, mmaModForumComponent, $mmaModForumOffline, $mmaModForumSync, $mmCourseHelper,
-            mmaModForumAutomSyncedEvent, mmaModForumManualSyncedEvent, $mmApp, mmCoreEventOnlineStatusChanged) {
-    var module = $stateParams.module || {},
-        courseid = $stateParams.courseid,
-        forum,
-        page = 0,
-        scrollView,
-        shouldScrollTop = false,
-        usesGroups = false,
-        obsNewDisc, obsReply, syncObserver, syncManualObserver, onlineObserver;
-    $scope.title = module.name;
-    $scope.description = module.description;
-    $scope.moduleUrl = module.url;
-    $scope.moduleName = $mmCourse.translateModuleName('forum');
-    $scope.courseid = courseid;
-    $scope.userStateName = mmUserProfileState;
-    $scope.isCreateEnabled = $mmaModForum.isCreateDiscussionEnabled();
-    $scope.refreshIcon = 'spinner';
-    $scope.syncIcon = 'spinner';
-    $scope.component = mmaModForumComponent;
-    $scope.componentId = module.id;
-    function fetchForumDataAndDiscussions(refresh, sync, showErrors) {
-        $scope.isOnline = $mmApp.isOnline();
-        return $mmaModForum.getForum(courseid, module.id).then(function(forumdata) {
-            forum = forumdata;
-            $scope.title = forum.name || $scope.title;
-            $scope.description = forum.intro || $scope.description;
-            $scope.forum = forum;
-            if (!$scope.linkToLoad) {
-                $scope.linkToLoad = $scope.isCreateEnabled && forum.cancreatediscussions ? 2 : 1;
-            }
-            if (sync) {
-                return syncForum(showErrors).catch(function() {
-                });
-            }
-        }).then(function() {
-            if ($mmGroups.canGetActivityGroupMode()) {
-                return $mmGroups.getActivityGroupMode(forum.cmid).then(function(mode) {
-                    usesGroups = mode === $mmGroups.SEPARATEGROUPS || mode === $mmGroups.VISIBLEGROUPS;
-                });
-            }
-        }).then(function() {
-            var promises = [];
-            promises.push($mmaModForumOffline.getNewDiscussions(forum.id).then(function(offlineDiscussions) {
-                $scope.hasOffline = !!offlineDiscussions.length;
-                if ($scope.hasOffline) {
-                    var promise = usesGroups ?
-                        $mmaModForum.formatDiscussionsGroups(forum.cmid, offlineDiscussions) : $q.when(offlineDiscussions);
-                    return promise.then(function(offlineDiscussions) {
-                        var userPromises = [];
-                        angular.forEach(offlineDiscussions, function(discussion) {
-                            if (discussion.parent != 0 || forum.type != 'single') {
-                                userPromises.push($mmUser.getProfile(discussion.userid, courseid, true).then(function(user) {
-                                    discussion.userfullname = user.fullname;
-                                    discussion.userpictureurl = user.profileimageurl;
-                                }));
-                            }
-                        });
-                        return $q.all(userPromises).then(function() {
-                            $scope.offlineDiscussions = offlineDiscussions;
-                        });
-                    });
-                } else {
-                    $scope.offlineDiscussions = [];
-                }
-            }));
-            promises.push(fetchDiscussions(refresh));
-            return $q.all(promises);
-        }).then(function() {
-            $mmCourseHelper.fillContextMenu($scope, module, courseid, refresh, mmaModForumComponent);
-        }).catch(function(message) {
-            if (!refresh) {
-                return refreshData(sync);
-            }
-            if (message) {
-                $mmUtil.showErrorModal(message);
-            } else {
-                $mmUtil.showErrorModal('mma.mod_forum.errorgetforum', true);
-            }
-            $scope.canLoadMore = false;
-            return $q.reject();
-        });
-    }
-    function fetchDiscussions(refresh) {
-        if (refresh) {
-            page = 0;
-        }
-        return $mmaModForum.getDiscussions(forum.id, page).then(function(response) {
-            var promise = usesGroups ?
-                    $mmaModForum.formatDiscussionsGroups(forum.cmid, response.discussions) : $q.when(response.discussions);
-            return promise.then(function(discussions) {
-                if (forum.type == 'single') {
-                    for (var x in discussions) {
-                        if (discussions[x].userfullname && discussions[x].parent == 0) {
-                            discussions[x].userfullname = false;
-                            break;
-                        }
-                    }
-                }
-                if (page == 0) {
-                    $scope.discussions = discussions;
-                } else {
-                    $scope.discussions = $scope.discussions.concat(discussions);
-                }
-                $scope.count = $scope.discussions.length;
-                $scope.canLoadMore = response.canLoadMore;
-                page++;
-                return $mmaModForumOffline.hasForumReplies(forum.id).then(function(hasOffline) {
-                    var offlinePromises = [];
-                    $scope.hasOffline = $scope.hasOffline || hasOffline;
-                    if (hasOffline) {
-                        angular.forEach(discussions, function(discussion) {
-                            offlinePromises.push($mmaModForumOffline.getDiscussionReplies(discussion.discussion).then(function(replies) {
-                                discussion.numreplies = parseInt(discussion.numreplies, 10) + parseInt(replies.length, 10);
-                            }));
-                        });
-                    }
-                    return $q.all(offlinePromises);
-                });
-            });
-        }, function(message) {
-            $mmUtil.showErrorModal(message);
-            $scope.canLoadMore = false;
-            return $q.reject();
-        });
-    }
-    function syncForum(showErrors) {
-        var promises = [],
-            warnings = [];
-        promises.push($mmaModForumSync.syncForumDiscussions(forum.id).then(function(result) {
-            if (result.warnings && result.warnings.length) {
-                warnings = warnings.concat(result.warnings);
-                $mmUtil.showErrorModal(result.warnings[0]);
-            }
-            return result.updated;
-        }));
-        promises.push($mmaModForumSync.syncForumReplies(forum.id).then(function(result) {
-            if (result.warnings && result.warnings.length) {
-                warnings = warnings.concat(result.warnings);
-                $mmUtil.showErrorModal(result.warnings[0]);
-            }
-            return result.updated;
-        }));
-        return $q.all(promises).then(function(results) {
-            var updated = results.reduce(function(a, b) {
-                return a || b;
-            }, false);
-            if (updated) {
-                $mmEvents.trigger(mmaModForumManualSyncedEvent, {
-                    siteid: $mmSite.getId(),
-                    forumid: forum.id,
-                    userid: $mmSite.getUserId(),
-                    warnings: warnings
-                });
-            }
-            return updated;
-        }).catch(function(error) {
-            if (showErrors) {
-                if (error) {
-                    $mmUtil.showErrorModal(error);
-                } else {
-                    $mmUtil.showErrorModal('mm.core.errorsync', true);
-                }
-            }
-            return $q.reject();
-        });
-    }
-    function scrollTop() {
-        if (!scrollView) {
-            scrollView = $ionicScrollDelegate.$getByHandle('mmaModForumDiscussionsScroll');
-        }
-        scrollView && scrollView.scrollTop && scrollView.scrollTop();
-    }
-    function refreshData(sync, showErrors) {
-        var promises = [];
-        promises.push($mmaModForum.invalidateForumData(courseid));
-        if (forum) {
-            promises.push($mmaModForum.invalidateDiscussionsList(forum.id));
-            promises.push($mmGroups.invalidateActivityGroupMode(forum.cmid));
-        }
-        return $q.all(promises).finally(function() {
-            return fetchForumDataAndDiscussions(true, sync, showErrors);
-        });
-    }
-    function eventReceived(data) {
-        if ((forum && forum.id === data.forumid) || data.cmid === module.id) {
-            if ($ionicPlatform.isTablet()) {
-                scrollTop();
-            } else {
-                shouldScrollTop = true;
-            }
-            $scope.discussionsLoaded = false;
-            showSpinnerAndFetch(false);
-            $mmCourse.checkModuleCompletion(courseid, module.completionstatus);
-        }
-    }
-    fetchForumDataAndDiscussions(false, true).then(function() {
-        $mmaModForum.logView(forum.id).then(function() {
-            $mmCourse.checkModuleCompletion(courseid, module.completionstatus);
-        });
-    }).finally(function() {
-        $scope.refreshIcon = 'ion-refresh';
-        $scope.syncIcon = 'ion-loop';
-        $scope.discussionsLoaded = true;
-    });
-    $scope.loadMoreDiscussions = function() {
-        fetchDiscussions().finally(function() {
-            $scope.$broadcast('scroll.infiniteScrollComplete');
-        });
-    };
-    $scope.refreshDiscussions = function(showErrors) {
-        if ($scope.discussionsLoaded) {
-            return showSpinnerAndFetch(true, showErrors);
-        }
-    };
-    function showSpinnerAndFetch(sync, showErrors) {
-        $scope.refreshIcon = 'spinner';
-        $scope.syncIcon = 'spinner';
-        return refreshData(sync, showErrors).finally(function() {
-            $scope.discussionsLoaded = true;
-            $scope.refreshIcon = 'ion-refresh';
-            $scope.syncIcon = 'ion-loop';
-            $scope.$broadcast('scroll.refreshComplete');
-        });
-    }
-    $scope.removeFiles = function() {
-        $mmCourseHelper.confirmAndRemove(module, courseid);
-    };
-    $scope.prefetch = function() {
-        $mmCourseHelper.contextMenuPrefetch($scope, module, courseid);
-    };
-    $scope.expandDescription = function() {
-        $mmText.expandText($translate.instant('mm.core.description'), $scope.description, false, mmaModForumComponent, module.id);
-    };
-    onlineObserver = $mmEvents.on(mmCoreEventOnlineStatusChanged, function(online) {
-        $scope.isOnline = online;
-    });
-    syncObserver = $mmEvents.on(mmaModForumAutomSyncedEvent, function(data) {
-        if (forum && data && data.siteid == $mmSite.getId() && data.forumid == forum.id && data.userid == $mmSite.getUserId()) {
-            $scope.discussionsLoaded = false;
-            return showSpinnerAndFetch(false);
-        }
-    });
-    syncManualObserver = $mmEvents.on(mmaModForumManualSyncedEvent, function(data) {
-        if (forum && data && data.siteid == $mmSite.getId() && data.forumid == forum.id && data.userid == $mmSite.getUserId()) {
-            $scope.discussionsLoaded = false;
-            return showSpinnerAndFetch(false);
-        }
-    });
-    obsNewDisc = $mmEvents.on(mmaModForumNewDiscussionEvent, eventReceived);
-    obsReply = $mmEvents.on(mmaModForumReplyDiscussionEvent, eventReceived);
-    $scope.$on('$ionicView.enter', function() {
-        if (shouldScrollTop) {
-            shouldScrollTop = false;
-            scrollTop();
-        }
-    });
-    $scope.$on('$destroy', function(){
-        obsNewDisc && obsNewDisc.off && obsNewDisc.off();
-        obsReply && obsReply.off && obsReply.off();
-        syncObserver && syncObserver.off && syncObserver.off();
-        syncManualObserver && syncManualObserver.off && syncManualObserver.off();
-        onlineObserver && onlineObserver.off && onlineObserver.off();
-    });
-}]);
-
-angular.module('mm.addons.mod_forum')
-.controller('mmaModForumNewDiscussionCtrl', ["$scope", "$stateParams", "$mmGroups", "$q", "$mmaModForum", "$mmEvents", "$ionicPlatform", "$mmUtil", "$ionicHistory", "$translate", "mmaModForumNewDiscussionEvent", "$mmaModForumOffline", "$mmSite", "mmaModForumComponent", "mmaModForumAutomSyncedEvent", "$mmSyncBlock", "$mmaModForumSync", "$mmText", "$mmaModForumHelper", "$mmFileUploaderHelper", function($scope, $stateParams, $mmGroups, $q, $mmaModForum, $mmEvents, $ionicPlatform,
-            $mmUtil, $ionicHistory, $translate, mmaModForumNewDiscussionEvent, $mmaModForumOffline, $mmSite, mmaModForumComponent,
-            mmaModForumAutomSyncedEvent, $mmSyncBlock, $mmaModForumSync, $mmText, $mmaModForumHelper, $mmFileUploaderHelper) {
-    var courseId = $stateParams.cid,
-        forumId = $stateParams.forumid,
-        cmId = $stateParams.cmid,
-        timecreated = $stateParams.timecreated,
-        syncObserver,
-        syncId,
-        originalData;
-    $mmUtil.blockLeaveView($scope, leaveView);
-    $scope.newDiscussion = {
-        subject: '',
-        text: '',
-        subscribe: true,
-        files: []
-    };
-    $scope.hasOffline = false;
-    $scope.component = mmaModForumComponent;
-    $scope.canAddAttachments = $mmaModForum.canAddAttachments();
-    function fetchDiscussionData(refresh) {
-        return $mmGroups.getActivityGroupMode(cmId).then(function(mode) {
-            var promises = [];
-            if (mode === $mmGroups.SEPARATEGROUPS || mode === $mmGroups.VISIBLEGROUPS) {
-                promises.push($mmGroups.getActivityAllowedGroups(cmId).then(function(forumgroups) {
-                    var promise;
-                    if (mode === $mmGroups.VISIBLEGROUPS) {
-                        promise = validateVisibleGroups(forumgroups, refresh);
-                    } else {
-                        promise = addAllParticipantsOption(forumgroups, true);
-                    }
-                    return promise.then(function(forumgroups) {
-                        if (forumgroups.length > 0) {
-                            $scope.groups = forumgroups;
-                            $scope.newDiscussion.groupid = $scope.newDiscussion.groupid ?
-                                $scope.newDiscussion.groupid : forumgroups[0].id;
-                            $scope.showGroups = true;
-                        } else {
-                            var message = mode === $mmGroups.SEPARATEGROUPS ?
-                                                'mma.mod_forum.cannotadddiscussionall' : 'mma.mod_forum.cannotadddiscussion';
-                            return $q.reject($translate.instant(message));
-                        }
-                    });
-                }));
-            } else {
-                $scope.showGroups = false;
-            }
-            promises.push($mmaModForum.getForum(courseId, cmId).then(function(forum) {
-                $scope.forum = forum;
-            }));
-            if (timecreated && !refresh) {
-                syncId = $mmaModForumSync.getForumSyncId(forumId);
-                promises.push($mmaModForumSync.waitForSync(syncId).then(function() {
-                    if (!$scope.$$destroyed) {
-                        $mmSyncBlock.blockOperation(mmaModForumComponent, syncId);
-                    }
-                    return $mmaModForumOffline.getNewDiscussion(forumId, timecreated).then(function(discussion) {
-                        $scope.hasOffline = true;
-                        $scope.newDiscussion.groupid = discussion.groupid ? discussion.groupid : $scope.newDiscussion.groupid;
-                        $scope.newDiscussion.subject = discussion.subject;
-                        $scope.newDiscussion.text = discussion.message;
-                        $scope.newDiscussion.subscribe = discussion.subscribe;
-                        if (discussion.attachments && discussion.attachments.offline) {
-                            return $mmaModForumHelper.getNewDiscussionStoredFiles(forumId, timecreated).then(function(files) {
-                                $scope.newDiscussion.files = files;
-                            });
-                        }
-                    });
-                }));
-            }
-            return $q.all(promises);
-        }).then(function() {
-            if (!originalData) {
-                originalData = angular.copy($scope.newDiscussion);
-            }
-            $scope.showForm = true;
-        }).catch(function(message) {
-            $mmUtil.showErrorModalDefault(message, 'mma.mod_forum.errorgetgroups', true);
-            $scope.showForm = false;
-            return $q.reject();
-        });
-    }
-    function validateVisibleGroups(forumgroups, refresh) {
-        if ($mmaModForum.isCanAddDiscussionAvailable()) {
-            return $mmaModForum.canAddDiscussionToAll(forumId).catch(function() {
-                return false;
-            }).then(function(canAdd) {
-                if (canAdd) {
-                    return addAllParticipantsOption(forumgroups);
-                } else {
-                    var promises = [],
-                        filtered = [];
-                    angular.forEach(forumgroups, function(group) {
-                        promises.push($mmaModForum.canAddDiscussion(forumId, group.id).catch(function() {
-                            return true;
-                        }).then(function(canAdd) {
-                            if (canAdd) {
-                                filtered.push(group);
-                            }
-                        }));
-                    });
-                    return $q.all(promises).then(function() {
-                        return filtered;
-                    });
-                }
-            });
-        } else {
-            return $mmGroups.getUserGroupsInCourse(courseId, refresh).then(function(usergroups) {
-                if (usergroups.length === 0) {
-                    return forumgroups;
-                }
-                return filterGroups(forumgroups, usergroups);
-            });
-        }
-    }
-    function filterGroups(forumgroups, usergroups) {
-        var filtered = [],
-            usergroupsids = usergroups.map(function(g) {
-                return g.id;
-            });
-        angular.forEach(forumgroups, function(fg) {
-            if (usergroupsids.indexOf(fg.id) > -1) {
-                filtered.push(fg);
-            }
-        });
-        return filtered;
-    }
-    function addAllParticipantsOption(groups, check) {
-        var promise;
-        if (!$mmaModForum.isAllParticipantsFixed()) {
-            return $q.when(groups);
-        } else if (check) {
-            promise = $mmaModForum.canAddDiscussionToAll(forumId).catch(function() {
-                return false;
-            });
-        } else {
-            promise = $q.when(true);
-        }
-        return promise.then(function(canAdd) {
-            if (canAdd) {
-                groups.unshift({
-                    courseid: courseId,
-                    id: -1,
-                    name: $translate.instant('mm.core.allparticipants')
-                });
-            }
-            return groups;
-        });
-    }
-    fetchDiscussionData().finally(function() {
-        $scope.groupsLoaded = true;
-    });
-    $scope.refreshGroups = function() {
-        var p1 = $mmGroups.invalidateActivityGroupMode(cmId),
-            p2 = $mmGroups.invalidateActivityAllowedGroups(cmId),
-            p3 = $mmaModForum.invalidateCanAddDiscussion(forumId);
-        $q.all([p1, p2, p3]).finally(function() {
-            fetchDiscussionData(true).finally(function() {
-                $scope.$broadcast('scroll.refreshComplete');
-            });
-        });
-    };
-    function returnToDiscussions(discussionId) {
-        var data = {
-            forumid: forumId,
-            cmid: cmId
-        };
-        if (discussionId) {
-            data.discussionid = discussionId;
-        }
-        $mmEvents.trigger(mmaModForumNewDiscussionEvent, data);
-        $mmFileUploaderHelper.clearTmpFiles($scope.newDiscussion.files);
-        if ($ionicPlatform.isTablet()) {
-            $scope.hasOffline = false;
-            $scope.newDiscussion.subject = '';
-            $scope.newDiscussion.text = '';
-            $scope.newDiscussion.files = [];
-            originalData = angular.copy($scope.newDiscussion);
-        } else {
-            $ionicHistory.goBack();
-        }
-    }
-    function leaveView() {
-        var promise;
-        if (!$mmaModForumHelper.hasPostDataChanged($scope.newDiscussion, originalData)) {
-            promise = $q.when();
-        } else {
-            promise = $mmUtil.showConfirm($translate('mm.core.confirmcanceledit'));
-        }
-        return promise.then(function() {
-            $mmFileUploaderHelper.clearTmpFiles($scope.newDiscussion.files);
-        });
-    }
-    $scope.add = function() {
-        var modal,
-            forumName = $scope.forum.name,
-            subject = $scope.newDiscussion.subject,
-            message = $scope.newDiscussion.text,
-            subscribe = $scope.newDiscussion.subscribe,
-            groupId = $scope.newDiscussion.groupid,
-            attachments = $scope.newDiscussion.files,
-            discTimecreated = timecreated || Date.now(),
-            saveOffline = false;
-        if (!subject) {
-            $mmUtil.showErrorModal('mma.mod_forum.erroremptysubject', true);
-            return;
-        }
-        if (!message) {
-            $mmUtil.showErrorModal('mma.mod_forum.erroremptymessage', true);
-            return;
-        }
-        modal = $mmUtil.showModalLoading('mm.core.sending', true);
-        $mmUtil.isRichTextEditorEnabled().then(function(enabled) {
-            if (!enabled) {
-                message = $mmText.formatHtmlLines(message);
-            }
-            if (attachments.length) {
-                return $mmaModForumHelper.uploadOrStoreNewDiscussionFiles(forumId, discTimecreated, attachments, false)
-                        .catch(function() {
-                    saveOffline = true;
-                    return $mmaModForumHelper.uploadOrStoreNewDiscussionFiles(forumId, discTimecreated, attachments, true);
-                });
-            }
-        }).then(function(attach) {
-            if (saveOffline) {
-                return $mmaModForumOffline.addNewDiscussion(forumId, forumName, courseId, subject,
-                        message, subscribe, groupId, attach, discTimecreated).then(function() {
-                });
-            } else {
-                return $mmaModForum.addNewDiscussion(forumId, forumName, courseId, subject, message, subscribe,
-                        groupId, attach, undefined, discTimecreated, !attachments.length);
-            }
-        }).then(function(discussionId) {
-            if (discussionId) {
-                $mmaModForumHelper.deleteNewDiscussionStoredFiles(forumId, discTimecreated);
-            }
-            returnToDiscussions(discussionId);
-        }).catch(function(message) {
-            $mmUtil.showErrorModalDefault(message, 'mma.mod_forum.cannotcreatediscussion', true);
-        }).finally(function() {
-            modal.dismiss();
-        });
-    };
-    if (timecreated) {
-        syncObserver = $mmEvents.on(mmaModForumAutomSyncedEvent, function(data) {
-            if (data && data.siteid == $mmSite.getId() && data.forumid == forumId && data.userid == $mmSite.getUserId()) {
-                $mmUtil.showModal('mm.core.notice', 'mm.core.contenteditingsynced');
-                returnToDiscussions();
-            }
-        });
-    }
-    $scope.discard = function() {
-        return $mmUtil.showConfirm($translate('mm.core.areyousure')).then(function() {
-            var promises = [];
-            promises.push($mmaModForumOffline.deleteNewDiscussion(forumId, timecreated));
-            promises.push($mmaModForumHelper.deleteNewDiscussionStoredFiles(forumId, timecreated).catch(function() {
-            }));
-            return $q.all(promises).then(function() {
-                returnToDiscussions();
-            });
-        });
-    };
-    $scope.firstRender = function() {
-        if (originalData) {
-            originalData.text = $scope.newDiscussion.text;
-        }
-    };
-    $scope.$on('$destroy', function(){
-        syncObserver && syncObserver.off && syncObserver.off();
-        if (syncId) {
-            $mmSyncBlock.unblockOperation(mmaModForumComponent, syncId);
-        }
-    });
-}]);
-
-angular.module('mm.addons.mod_forum')
 .directive('mmaModForumDiscussionPost', ["$mmaModForum", "$mmUtil", "$translate", "$q", "$mmaModForumOffline", "$mmSyncBlock", "mmaModForumComponent", "$mmaModForumSync", "$mmText", "$mmaModForumHelper", "$ionicScrollDelegate", "$mmFileUploaderHelper", function($mmaModForum, $mmUtil, $translate, $q, $mmaModForumOffline, $mmSyncBlock,
         mmaModForumComponent, $mmaModForumSync, $mmText, $mmaModForumHelper, $ionicScrollDelegate, $mmFileUploaderHelper) {
     function confirmDiscard(scope) {
@@ -39300,6 +38536,770 @@ angular.module('mm.addons.mod_forum')
         });
     }
     return self;
+}]);
+
+angular.module('mm.addons.mod_forum')
+.controller('mmaModForumDiscussionCtrl', ["$q", "$scope", "$stateParams", "$mmaModForum", "$mmSite", "$mmUtil", "$translate", "$mmEvents", "$ionicScrollDelegate", "mmaModForumComponent", "mmaModForumReplyDiscussionEvent", "$mmaModForumOffline", "$mmaModForumSync", "mmaModForumAutomSyncedEvent", "mmaModForumManualSyncedEvent", "$mmApp", "$ionicPlatform", "mmCoreEventOnlineStatusChanged", "$mmaModForumHelper", "$mmFileUploaderHelper", function($q, $scope, $stateParams, $mmaModForum, $mmSite, $mmUtil, $translate, $mmEvents,
+            $ionicScrollDelegate, mmaModForumComponent, mmaModForumReplyDiscussionEvent, $mmaModForumOffline, $mmaModForumSync,
+            mmaModForumAutomSyncedEvent, mmaModForumManualSyncedEvent, $mmApp, $ionicPlatform, mmCoreEventOnlineStatusChanged,
+            $mmaModForumHelper, $mmFileUploaderHelper) {
+    var discussionId = $stateParams.discussionid,
+        courseId = $stateParams.cid,
+        forumId = $stateParams.forumid,
+        cmid = $stateParams.cmid,
+        scrollView,
+        syncObserver, syncManualObserver, onlineObserver;
+    $mmUtil.blockLeaveView($scope, leaveView);
+    $scope.sortTypeFlatNewest = 'flat-newest';
+    $scope.sortTypeFlatOldest = 'flat-oldest';
+    $scope.sortTypeNested = 'nested';
+    $scope.discussionId = discussionId;
+    $scope.trackPosts = $stateParams.trackposts;
+    $scope.component = mmaModForumComponent;
+    $scope.discussionStr = $translate.instant('discussion');
+    $scope.componentId = cmid;
+    $scope.courseId = courseId;
+    $scope.refreshPostsIcon = 'spinner';
+    $scope.syncIcon = 'spinner';
+    $scope.newPost = {
+        replyingto: undefined,
+        editing: undefined,
+        subject: '',
+        text: '',
+        isEditing: false,
+        files: []
+    };
+    $scope.sort = $scope.sortTypeFlatOldest;
+    $scope.locked = !!$stateParams.locked;
+    $scope.originalData = {};
+    function fetchForum() {
+        if (courseId && cmid) {
+            return $mmaModForum.getForum(courseId, cmid);
+        } else if (courseId && forumId) {
+            return $mmaModForum.getForumById(courseId, forumId);
+        } else {
+            return $q.reject();
+        }
+    }
+    function fetchPosts(sync, showErrors) {
+        var syncPromise,
+            onlinePosts = [],
+            offlineReplies = [];
+        $scope.isOnline = $mmApp.isOnline();
+        $scope.isTablet = $ionicPlatform.isTablet();
+        if (sync) {
+            syncPromise = syncDiscussion(showErrors).catch(function() {
+            });
+        } else {
+            syncPromise = $q.when();
+        }
+        return syncPromise.then(function() {
+            return $mmaModForum.getDiscussionPosts(discussionId).then(function(posts) {
+                onlinePosts = posts;
+            }).then(function() {
+                return $mmaModForumOffline.getDiscussionReplies(discussionId).then(function(replies) {
+                    $scope.postHasOffline = !!replies.length;
+                    var convertPromises = [];
+                    var posts = {};
+                    angular.forEach(onlinePosts, function(post) {
+                        posts[post.id] = post;
+                    });
+                    angular.forEach(replies, function(offlineReply) {
+                        if (!forumId) {
+                            forumId = offlineReply.forumid;
+                        }
+                        if (!courseId) {
+                            courseId = offlineReply.courseid;
+                            $scope.courseId = courseId;
+                        }
+                        convertPromises.push($mmaModForumHelper.convertOfflineReplyToOnline(offlineReply).then(function(reply) {
+                            offlineReplies.push(reply);
+                            posts[reply.parent].canreply = false;
+                        }));
+                    });
+                    return $q.all(convertPromises).then(function() {
+                        onlinePosts = Object.keys(posts).map(function (key) {return posts[key];});
+                    });
+                });
+            });
+        }).then(function() {
+            var posts = offlineReplies.concat(onlinePosts);
+            $scope.discussion = $mmaModForum.extractStartingPost(posts);
+            if ($scope.sort == $scope.sortTypeNested) {
+                posts = $mmaModForum.sortDiscussionPosts(posts, 'ASC');
+                $scope.posts = $mmUtil.formatTree(posts, 'parent', 'id', $scope.discussion.id);
+            } else {
+                var direction = $scope.sort == $scope.sortTypeFlatNewest ? 'DESC' : 'ASC';
+                $scope.posts = $mmaModForum.sortDiscussionPosts(posts, direction);
+            }
+            $scope.defaultSubject = $translate.instant('mma.mod_forum.re') + ' ' + $scope.discussion.subject;
+            $scope.newPost.subject = $scope.defaultSubject;
+            return fetchForum().then(function(forum) {
+                if ($scope.discussion.userfullname && $scope.discussion.parent == 0 && forum.type == 'single') {
+                    $scope.discussion.userfullname = null;
+                }
+                forumId = forum.id;
+                cmid = forum.cmid;
+                $scope.componentId = cmid;
+                $scope.forum = forum;
+            }).catch(function() {
+            });
+        }).catch(function(message) {
+            $mmUtil.showErrorModal(message);
+            return $q.reject();
+        }).finally(function() {
+            $scope.discussionLoaded = true;
+            $scope.refreshPostsIcon = 'ion-refresh';
+            $scope.syncIcon = 'ion-loop';
+        });
+    }
+    $scope.changeSort = function(type) {
+        $scope.discussionLoaded = false;
+        scrollTop();
+        $scope.sort = type;
+        return fetchPosts();
+    };
+    function syncDiscussion(showErrors) {
+        return $mmaModForumSync.syncDiscussionReplies(discussionId).then(function(result) {
+            if (result.warnings && result.warnings.length) {
+                $mmUtil.showErrorModal(result.warnings[0]);
+            }
+            if (result && result.updated) {
+                $mmEvents.trigger(mmaModForumManualSyncedEvent, {
+                    siteid: $mmSite.getId(),
+                    forumid: forumId,
+                    userid: $mmSite.getUserId(),
+                    warnings: result.warnings
+                });
+            }
+            return result.updated;
+        }).catch(function(error) {
+            if (showErrors) {
+                if (error) {
+                    $mmUtil.showErrorModal(error);
+                } else {
+                    $mmUtil.showErrorModal('mm.core.errorsync', true);
+                }
+            }
+            return $q.reject();
+        });
+    }
+    function refreshPosts(sync, showErrors) {
+        scrollTop();
+        $scope.refreshPostsIcon = 'spinner';
+        $scope.syncIcon = 'spinner';
+        return $mmaModForum.invalidateDiscussionPosts(discussionId).finally(function() {
+            return fetchPosts(sync, showErrors);
+        });
+    }
+    function notifyPostListChanged() {
+        var data = {
+            forumid: forumId,
+            discussionid: discussionId,
+            cmid: cmid
+        };
+        $mmEvents.trigger(mmaModForumReplyDiscussionEvent, data);
+    }
+    fetchPosts(true).then(function() {
+        $mmaModForum.logDiscussionView(discussionId);
+    });
+    $scope.refreshPosts = function(showErrors) {
+        if ($scope.discussionLoaded) {
+            return refreshPosts(true, showErrors).finally(function() {
+                $scope.$broadcast('scroll.refreshComplete');
+            });
+        }
+    };
+    syncObserver = $mmEvents.on(mmaModForumAutomSyncedEvent, function(data) {
+        if (data && data.siteid == $mmSite.getId() && data.forumid == forumId && data.userid == $mmSite.getUserId() &&
+                discussionId == data.discussionid) {
+            $scope.discussionLoaded = false;
+            refreshPosts(false);
+        }
+    });
+    onlineObserver = $mmEvents.on(mmCoreEventOnlineStatusChanged, function(online) {
+        $scope.isOnline = online;
+    });
+    syncManualObserver = $mmEvents.on(mmaModForumManualSyncedEvent, function(data) {
+        if (data && data.siteid == $mmSite.getId() && data.forumid == forumId && data.userid == $mmSite.getUserId()) {
+            $scope.discussionLoaded = false;
+            refreshPosts(false);
+        }
+    });
+    function leaveView() {
+        var promise;
+        if (!$mmaModForumHelper.hasPostDataChanged($scope.newPost, $scope.originalData)) {
+            promise = $q.when();
+        } else {
+            promise = $mmUtil.showConfirm($translate('mm.core.confirmcanceledit'));
+        }
+        return promise.then(function() {
+            $mmFileUploaderHelper.clearTmpFiles($scope.newPost.files);
+        });
+    }
+    function scrollTop() {
+        if (!scrollView) {
+            scrollView = $ionicScrollDelegate.$getByHandle('mmaModForumPostsScroll');
+        }
+        scrollView && scrollView.scrollTop && scrollView.scrollTop();
+    }
+    $scope.postListChanged = function() {
+        notifyPostListChanged();
+        $scope.discussionLoaded = false;
+        refreshPosts(false).finally(function() {
+            $scope.discussionLoaded = true;
+        });
+    };
+    $scope.$on('$destroy', function(){
+        syncObserver && syncObserver.off && syncObserver.off();
+        syncManualObserver && syncManualObserver.off && syncManualObserver.off();
+        onlineObserver && onlineObserver.off && onlineObserver.off();
+    });
+}]);
+
+angular.module('mm.addons.mod_forum')
+.controller('mmaModForumDiscussionsCtrl', ["$q", "$scope", "$stateParams", "$mmaModForum", "$mmCourse", "$mmUtil", "$mmGroups", "$mmUser", "$mmEvents", "$ionicScrollDelegate", "$ionicPlatform", "mmUserProfileState", "mmaModForumNewDiscussionEvent", "$mmSite", "$translate", "mmaModForumReplyDiscussionEvent", "$mmText", "mmaModForumComponent", "$mmaModForumOffline", "$mmaModForumSync", "$mmCourseHelper", "mmaModForumAutomSyncedEvent", "mmaModForumManualSyncedEvent", "$mmApp", "mmCoreEventOnlineStatusChanged", function($q, $scope, $stateParams, $mmaModForum, $mmCourse, $mmUtil, $mmGroups, $mmUser,
+            $mmEvents, $ionicScrollDelegate, $ionicPlatform, mmUserProfileState, mmaModForumNewDiscussionEvent, $mmSite, $translate,
+            mmaModForumReplyDiscussionEvent, $mmText, mmaModForumComponent, $mmaModForumOffline, $mmaModForumSync, $mmCourseHelper,
+            mmaModForumAutomSyncedEvent, mmaModForumManualSyncedEvent, $mmApp, mmCoreEventOnlineStatusChanged) {
+    var module = $stateParams.module || {},
+        courseid = $stateParams.courseid,
+        forum,
+        page = 0,
+        scrollView,
+        shouldScrollTop = false,
+        usesGroups = false,
+        obsNewDisc, obsReply, syncObserver, syncManualObserver, onlineObserver;
+    $scope.title = module.name;
+    $scope.description = module.description;
+    $scope.moduleUrl = module.url;
+    $scope.moduleName = $mmCourse.translateModuleName('forum');
+    $scope.courseid = courseid;
+    $scope.userStateName = mmUserProfileState;
+    $scope.isCreateEnabled = $mmaModForum.isCreateDiscussionEnabled();
+    $scope.refreshIcon = 'spinner';
+    $scope.syncIcon = 'spinner';
+    $scope.component = mmaModForumComponent;
+    $scope.componentId = module.id;
+    function fetchForumDataAndDiscussions(refresh, sync, showErrors) {
+        $scope.isOnline = $mmApp.isOnline();
+        return $mmaModForum.getForum(courseid, module.id).then(function(forumdata) {
+            forum = forumdata;
+            $scope.title = forum.name || $scope.title;
+            $scope.description = forum.intro || $scope.description;
+            $scope.forum = forum;
+            if (!$scope.linkToLoad) {
+                $scope.linkToLoad = $scope.isCreateEnabled && forum.cancreatediscussions ? 2 : 1;
+            }
+            if (sync) {
+                return syncForum(showErrors).catch(function() {
+                });
+            }
+        }).then(function() {
+            if ($mmGroups.canGetActivityGroupMode()) {
+                return $mmGroups.getActivityGroupMode(forum.cmid).then(function(mode) {
+                    usesGroups = mode === $mmGroups.SEPARATEGROUPS || mode === $mmGroups.VISIBLEGROUPS;
+                });
+            }
+        }).then(function() {
+            var promises = [];
+            promises.push($mmaModForumOffline.getNewDiscussions(forum.id).then(function(offlineDiscussions) {
+                $scope.hasOffline = !!offlineDiscussions.length;
+                if ($scope.hasOffline) {
+                    var promise = usesGroups ?
+                        $mmaModForum.formatDiscussionsGroups(forum.cmid, offlineDiscussions) : $q.when(offlineDiscussions);
+                    return promise.then(function(offlineDiscussions) {
+                        var userPromises = [];
+                        angular.forEach(offlineDiscussions, function(discussion) {
+                            if (discussion.parent != 0 || forum.type != 'single') {
+                                userPromises.push($mmUser.getProfile(discussion.userid, courseid, true).then(function(user) {
+                                    discussion.userfullname = user.fullname;
+                                    discussion.userpictureurl = user.profileimageurl;
+                                }));
+                            }
+                        });
+                        return $q.all(userPromises).then(function() {
+                            $scope.offlineDiscussions = offlineDiscussions;
+                        });
+                    });
+                } else {
+                    $scope.offlineDiscussions = [];
+                }
+            }));
+            promises.push(fetchDiscussions(refresh));
+            return $q.all(promises);
+        }).then(function() {
+            $mmCourseHelper.fillContextMenu($scope, module, courseid, refresh, mmaModForumComponent);
+        }).catch(function(message) {
+            if (!refresh) {
+                return refreshData(sync);
+            }
+            if (message) {
+                $mmUtil.showErrorModal(message);
+            } else {
+                $mmUtil.showErrorModal('mma.mod_forum.errorgetforum', true);
+            }
+            $scope.canLoadMore = false;
+            return $q.reject();
+        });
+    }
+    function fetchDiscussions(refresh) {
+        if (refresh) {
+            page = 0;
+        }
+        return $mmaModForum.getDiscussions(forum.id, page).then(function(response) {
+            var promise = usesGroups ?
+                    $mmaModForum.formatDiscussionsGroups(forum.cmid, response.discussions) : $q.when(response.discussions);
+            return promise.then(function(discussions) {
+                if (forum.type == 'single') {
+                    for (var x in discussions) {
+                        if (discussions[x].userfullname && discussions[x].parent == 0) {
+                            discussions[x].userfullname = false;
+                            break;
+                        }
+                    }
+                }
+                if (page == 0) {
+                    $scope.discussions = discussions;
+                } else {
+                    $scope.discussions = $scope.discussions.concat(discussions);
+                }
+                $scope.count = $scope.discussions.length;
+                $scope.canLoadMore = response.canLoadMore;
+                page++;
+                return $mmaModForumOffline.hasForumReplies(forum.id).then(function(hasOffline) {
+                    var offlinePromises = [];
+                    $scope.hasOffline = $scope.hasOffline || hasOffline;
+                    if (hasOffline) {
+                        angular.forEach(discussions, function(discussion) {
+                            offlinePromises.push($mmaModForumOffline.getDiscussionReplies(discussion.discussion).then(function(replies) {
+                                discussion.numreplies = parseInt(discussion.numreplies, 10) + parseInt(replies.length, 10);
+                            }));
+                        });
+                    }
+                    return $q.all(offlinePromises);
+                });
+            });
+        }, function(message) {
+            $mmUtil.showErrorModal(message);
+            $scope.canLoadMore = false;
+            return $q.reject();
+        });
+    }
+    function syncForum(showErrors) {
+        var promises = [],
+            warnings = [];
+        promises.push($mmaModForumSync.syncForumDiscussions(forum.id).then(function(result) {
+            if (result.warnings && result.warnings.length) {
+                warnings = warnings.concat(result.warnings);
+                $mmUtil.showErrorModal(result.warnings[0]);
+            }
+            return result.updated;
+        }));
+        promises.push($mmaModForumSync.syncForumReplies(forum.id).then(function(result) {
+            if (result.warnings && result.warnings.length) {
+                warnings = warnings.concat(result.warnings);
+                $mmUtil.showErrorModal(result.warnings[0]);
+            }
+            return result.updated;
+        }));
+        return $q.all(promises).then(function(results) {
+            var updated = results.reduce(function(a, b) {
+                return a || b;
+            }, false);
+            if (updated) {
+                $mmEvents.trigger(mmaModForumManualSyncedEvent, {
+                    siteid: $mmSite.getId(),
+                    forumid: forum.id,
+                    userid: $mmSite.getUserId(),
+                    warnings: warnings
+                });
+            }
+            return updated;
+        }).catch(function(error) {
+            if (showErrors) {
+                if (error) {
+                    $mmUtil.showErrorModal(error);
+                } else {
+                    $mmUtil.showErrorModal('mm.core.errorsync', true);
+                }
+            }
+            return $q.reject();
+        });
+    }
+    function scrollTop() {
+        if (!scrollView) {
+            scrollView = $ionicScrollDelegate.$getByHandle('mmaModForumDiscussionsScroll');
+        }
+        scrollView && scrollView.scrollTop && scrollView.scrollTop();
+    }
+    function refreshData(sync, showErrors) {
+        var promises = [];
+        promises.push($mmaModForum.invalidateForumData(courseid));
+        if (forum) {
+            promises.push($mmaModForum.invalidateDiscussionsList(forum.id));
+            promises.push($mmGroups.invalidateActivityGroupMode(forum.cmid));
+        }
+        return $q.all(promises).finally(function() {
+            return fetchForumDataAndDiscussions(true, sync, showErrors);
+        });
+    }
+    function eventReceived(data) {
+        if ((forum && forum.id === data.forumid) || data.cmid === module.id) {
+            if ($ionicPlatform.isTablet()) {
+                scrollTop();
+            } else {
+                shouldScrollTop = true;
+            }
+            $scope.discussionsLoaded = false;
+            showSpinnerAndFetch(false);
+            $mmCourse.checkModuleCompletion(courseid, module.completionstatus);
+        }
+    }
+    fetchForumDataAndDiscussions(false, true).then(function() {
+        $mmaModForum.logView(forum.id).then(function() {
+            $mmCourse.checkModuleCompletion(courseid, module.completionstatus);
+        });
+    }).finally(function() {
+        $scope.refreshIcon = 'ion-refresh';
+        $scope.syncIcon = 'ion-loop';
+        $scope.discussionsLoaded = true;
+    });
+    $scope.loadMoreDiscussions = function() {
+        fetchDiscussions().finally(function() {
+            $scope.$broadcast('scroll.infiniteScrollComplete');
+        });
+    };
+    $scope.refreshDiscussions = function(showErrors) {
+        if ($scope.discussionsLoaded) {
+            return showSpinnerAndFetch(true, showErrors);
+        }
+    };
+    function showSpinnerAndFetch(sync, showErrors) {
+        $scope.refreshIcon = 'spinner';
+        $scope.syncIcon = 'spinner';
+        return refreshData(sync, showErrors).finally(function() {
+            $scope.discussionsLoaded = true;
+            $scope.refreshIcon = 'ion-refresh';
+            $scope.syncIcon = 'ion-loop';
+            $scope.$broadcast('scroll.refreshComplete');
+        });
+    }
+    $scope.removeFiles = function() {
+        $mmCourseHelper.confirmAndRemove(module, courseid);
+    };
+    $scope.prefetch = function() {
+        $mmCourseHelper.contextMenuPrefetch($scope, module, courseid);
+    };
+    $scope.expandDescription = function() {
+        $mmText.expandText($translate.instant('mm.core.description'), $scope.description, false, mmaModForumComponent, module.id);
+    };
+    onlineObserver = $mmEvents.on(mmCoreEventOnlineStatusChanged, function(online) {
+        $scope.isOnline = online;
+    });
+    syncObserver = $mmEvents.on(mmaModForumAutomSyncedEvent, function(data) {
+        if (forum && data && data.siteid == $mmSite.getId() && data.forumid == forum.id && data.userid == $mmSite.getUserId()) {
+            $scope.discussionsLoaded = false;
+            return showSpinnerAndFetch(false);
+        }
+    });
+    syncManualObserver = $mmEvents.on(mmaModForumManualSyncedEvent, function(data) {
+        if (forum && data && data.siteid == $mmSite.getId() && data.forumid == forum.id && data.userid == $mmSite.getUserId()) {
+            $scope.discussionsLoaded = false;
+            return showSpinnerAndFetch(false);
+        }
+    });
+    obsNewDisc = $mmEvents.on(mmaModForumNewDiscussionEvent, eventReceived);
+    obsReply = $mmEvents.on(mmaModForumReplyDiscussionEvent, eventReceived);
+    $scope.$on('$ionicView.enter', function() {
+        if (shouldScrollTop) {
+            shouldScrollTop = false;
+            scrollTop();
+        }
+    });
+    $scope.$on('$destroy', function(){
+        obsNewDisc && obsNewDisc.off && obsNewDisc.off();
+        obsReply && obsReply.off && obsReply.off();
+        syncObserver && syncObserver.off && syncObserver.off();
+        syncManualObserver && syncManualObserver.off && syncManualObserver.off();
+        onlineObserver && onlineObserver.off && onlineObserver.off();
+    });
+}]);
+
+angular.module('mm.addons.mod_forum')
+.controller('mmaModForumNewDiscussionCtrl', ["$scope", "$stateParams", "$mmGroups", "$q", "$mmaModForum", "$mmEvents", "$ionicPlatform", "$mmUtil", "$ionicHistory", "$translate", "mmaModForumNewDiscussionEvent", "$mmaModForumOffline", "$mmSite", "mmaModForumComponent", "mmaModForumAutomSyncedEvent", "$mmSyncBlock", "$mmaModForumSync", "$mmText", "$mmaModForumHelper", "$mmFileUploaderHelper", function($scope, $stateParams, $mmGroups, $q, $mmaModForum, $mmEvents, $ionicPlatform,
+            $mmUtil, $ionicHistory, $translate, mmaModForumNewDiscussionEvent, $mmaModForumOffline, $mmSite, mmaModForumComponent,
+            mmaModForumAutomSyncedEvent, $mmSyncBlock, $mmaModForumSync, $mmText, $mmaModForumHelper, $mmFileUploaderHelper) {
+    var courseId = $stateParams.cid,
+        forumId = $stateParams.forumid,
+        cmId = $stateParams.cmid,
+        timecreated = $stateParams.timecreated,
+        syncObserver,
+        syncId,
+        originalData;
+    $mmUtil.blockLeaveView($scope, leaveView);
+    $scope.newDiscussion = {
+        subject: '',
+        text: '',
+        subscribe: true,
+        files: []
+    };
+    $scope.hasOffline = false;
+    $scope.component = mmaModForumComponent;
+    $scope.canAddAttachments = $mmaModForum.canAddAttachments();
+    function fetchDiscussionData(refresh) {
+        return $mmGroups.getActivityGroupMode(cmId).then(function(mode) {
+            var promises = [];
+            if (mode === $mmGroups.SEPARATEGROUPS || mode === $mmGroups.VISIBLEGROUPS) {
+                promises.push($mmGroups.getActivityAllowedGroups(cmId).then(function(forumgroups) {
+                    var promise;
+                    if (mode === $mmGroups.VISIBLEGROUPS) {
+                        promise = validateVisibleGroups(forumgroups, refresh);
+                    } else {
+                        promise = addAllParticipantsOption(forumgroups, true);
+                    }
+                    return promise.then(function(forumgroups) {
+                        if (forumgroups.length > 0) {
+                            $scope.groups = forumgroups;
+                            $scope.newDiscussion.groupid = $scope.newDiscussion.groupid ?
+                                $scope.newDiscussion.groupid : forumgroups[0].id;
+                            $scope.showGroups = true;
+                        } else {
+                            var message = mode === $mmGroups.SEPARATEGROUPS ?
+                                                'mma.mod_forum.cannotadddiscussionall' : 'mma.mod_forum.cannotadddiscussion';
+                            return $q.reject($translate.instant(message));
+                        }
+                    });
+                }));
+            } else {
+                $scope.showGroups = false;
+            }
+            promises.push($mmaModForum.getForum(courseId, cmId).then(function(forum) {
+                $scope.forum = forum;
+            }));
+            if (timecreated && !refresh) {
+                syncId = $mmaModForumSync.getForumSyncId(forumId);
+                promises.push($mmaModForumSync.waitForSync(syncId).then(function() {
+                    if (!$scope.$$destroyed) {
+                        $mmSyncBlock.blockOperation(mmaModForumComponent, syncId);
+                    }
+                    return $mmaModForumOffline.getNewDiscussion(forumId, timecreated).then(function(discussion) {
+                        $scope.hasOffline = true;
+                        $scope.newDiscussion.groupid = discussion.groupid ? discussion.groupid : $scope.newDiscussion.groupid;
+                        $scope.newDiscussion.subject = discussion.subject;
+                        $scope.newDiscussion.text = discussion.message;
+                        $scope.newDiscussion.subscribe = discussion.subscribe;
+                        if (discussion.attachments && discussion.attachments.offline) {
+                            return $mmaModForumHelper.getNewDiscussionStoredFiles(forumId, timecreated).then(function(files) {
+                                $scope.newDiscussion.files = files;
+                            });
+                        }
+                    });
+                }));
+            }
+            return $q.all(promises);
+        }).then(function() {
+            if (!originalData) {
+                originalData = angular.copy($scope.newDiscussion);
+            }
+            $scope.showForm = true;
+        }).catch(function(message) {
+            $mmUtil.showErrorModalDefault(message, 'mma.mod_forum.errorgetgroups', true);
+            $scope.showForm = false;
+            return $q.reject();
+        });
+    }
+    function validateVisibleGroups(forumgroups, refresh) {
+        if ($mmaModForum.isCanAddDiscussionAvailable()) {
+            return $mmaModForum.canAddDiscussionToAll(forumId).catch(function() {
+                return false;
+            }).then(function(canAdd) {
+                if (canAdd) {
+                    return addAllParticipantsOption(forumgroups);
+                } else {
+                    var promises = [],
+                        filtered = [];
+                    angular.forEach(forumgroups, function(group) {
+                        promises.push($mmaModForum.canAddDiscussion(forumId, group.id).catch(function() {
+                            return true;
+                        }).then(function(canAdd) {
+                            if (canAdd) {
+                                filtered.push(group);
+                            }
+                        }));
+                    });
+                    return $q.all(promises).then(function() {
+                        return filtered;
+                    });
+                }
+            });
+        } else {
+            return $mmGroups.getUserGroupsInCourse(courseId, refresh).then(function(usergroups) {
+                if (usergroups.length === 0) {
+                    return forumgroups;
+                }
+                return filterGroups(forumgroups, usergroups);
+            });
+        }
+    }
+    function filterGroups(forumgroups, usergroups) {
+        var filtered = [],
+            usergroupsids = usergroups.map(function(g) {
+                return g.id;
+            });
+        angular.forEach(forumgroups, function(fg) {
+            if (usergroupsids.indexOf(fg.id) > -1) {
+                filtered.push(fg);
+            }
+        });
+        return filtered;
+    }
+    function addAllParticipantsOption(groups, check) {
+        var promise;
+        if (!$mmaModForum.isAllParticipantsFixed()) {
+            return $q.when(groups);
+        } else if (check) {
+            promise = $mmaModForum.canAddDiscussionToAll(forumId).catch(function() {
+                return false;
+            });
+        } else {
+            promise = $q.when(true);
+        }
+        return promise.then(function(canAdd) {
+            if (canAdd) {
+                groups.unshift({
+                    courseid: courseId,
+                    id: -1,
+                    name: $translate.instant('mm.core.allparticipants')
+                });
+            }
+            return groups;
+        });
+    }
+    fetchDiscussionData().finally(function() {
+        $scope.groupsLoaded = true;
+    });
+    $scope.refreshGroups = function() {
+        var p1 = $mmGroups.invalidateActivityGroupMode(cmId),
+            p2 = $mmGroups.invalidateActivityAllowedGroups(cmId),
+            p3 = $mmaModForum.invalidateCanAddDiscussion(forumId);
+        $q.all([p1, p2, p3]).finally(function() {
+            fetchDiscussionData(true).finally(function() {
+                $scope.$broadcast('scroll.refreshComplete');
+            });
+        });
+    };
+    function returnToDiscussions(discussionId) {
+        var data = {
+            forumid: forumId,
+            cmid: cmId
+        };
+        if (discussionId) {
+            data.discussionid = discussionId;
+        }
+        $mmEvents.trigger(mmaModForumNewDiscussionEvent, data);
+        $mmFileUploaderHelper.clearTmpFiles($scope.newDiscussion.files);
+        if ($ionicPlatform.isTablet()) {
+            $scope.hasOffline = false;
+            $scope.newDiscussion.subject = '';
+            $scope.newDiscussion.text = '';
+            $scope.newDiscussion.files = [];
+            originalData = angular.copy($scope.newDiscussion);
+        } else {
+            $ionicHistory.goBack();
+        }
+    }
+    function leaveView() {
+        var promise;
+        if (!$mmaModForumHelper.hasPostDataChanged($scope.newDiscussion, originalData)) {
+            promise = $q.when();
+        } else {
+            promise = $mmUtil.showConfirm($translate('mm.core.confirmcanceledit'));
+        }
+        return promise.then(function() {
+            $mmFileUploaderHelper.clearTmpFiles($scope.newDiscussion.files);
+        });
+    }
+    $scope.add = function() {
+        var modal,
+            forumName = $scope.forum.name,
+            subject = $scope.newDiscussion.subject,
+            message = $scope.newDiscussion.text,
+            subscribe = $scope.newDiscussion.subscribe,
+            groupId = $scope.newDiscussion.groupid,
+            attachments = $scope.newDiscussion.files,
+            discTimecreated = timecreated || Date.now(),
+            saveOffline = false;
+        if (!subject) {
+            $mmUtil.showErrorModal('mma.mod_forum.erroremptysubject', true);
+            return;
+        }
+        if (!message) {
+            $mmUtil.showErrorModal('mma.mod_forum.erroremptymessage', true);
+            return;
+        }
+        modal = $mmUtil.showModalLoading('mm.core.sending', true);
+        $mmUtil.isRichTextEditorEnabled().then(function(enabled) {
+            if (!enabled) {
+                message = $mmText.formatHtmlLines(message);
+            }
+            if (attachments.length) {
+                return $mmaModForumHelper.uploadOrStoreNewDiscussionFiles(forumId, discTimecreated, attachments, false)
+                        .catch(function() {
+                    saveOffline = true;
+                    return $mmaModForumHelper.uploadOrStoreNewDiscussionFiles(forumId, discTimecreated, attachments, true);
+                });
+            }
+        }).then(function(attach) {
+            if (saveOffline) {
+                return $mmaModForumOffline.addNewDiscussion(forumId, forumName, courseId, subject,
+                        message, subscribe, groupId, attach, discTimecreated).then(function() {
+                });
+            } else {
+                return $mmaModForum.addNewDiscussion(forumId, forumName, courseId, subject, message, subscribe,
+                        groupId, attach, undefined, discTimecreated, !attachments.length);
+            }
+        }).then(function(discussionId) {
+            if (discussionId) {
+                $mmaModForumHelper.deleteNewDiscussionStoredFiles(forumId, discTimecreated);
+            }
+            returnToDiscussions(discussionId);
+        }).catch(function(message) {
+            $mmUtil.showErrorModalDefault(message, 'mma.mod_forum.cannotcreatediscussion', true);
+        }).finally(function() {
+            modal.dismiss();
+        });
+    };
+    if (timecreated) {
+        syncObserver = $mmEvents.on(mmaModForumAutomSyncedEvent, function(data) {
+            if (data && data.siteid == $mmSite.getId() && data.forumid == forumId && data.userid == $mmSite.getUserId()) {
+                $mmUtil.showModal('mm.core.notice', 'mm.core.contenteditingsynced');
+                returnToDiscussions();
+            }
+        });
+    }
+    $scope.discard = function() {
+        return $mmUtil.showConfirm($translate('mm.core.areyousure')).then(function() {
+            var promises = [];
+            promises.push($mmaModForumOffline.deleteNewDiscussion(forumId, timecreated));
+            promises.push($mmaModForumHelper.deleteNewDiscussionStoredFiles(forumId, timecreated).catch(function() {
+            }));
+            return $q.all(promises).then(function() {
+                returnToDiscussions();
+            });
+        });
+    };
+    $scope.firstRender = function() {
+        if (originalData) {
+            originalData.text = $scope.newDiscussion.text;
+        }
+    };
+    $scope.$on('$destroy', function(){
+        syncObserver && syncObserver.off && syncObserver.off();
+        if (syncId) {
+            $mmSyncBlock.unblockOperation(mmaModForumComponent, syncId);
+        }
+    });
 }]);
 
 angular.module('mm.addons.mod_glossary')
@@ -51893,9 +51893,9 @@ angular.module('mm.core')
     "languages": {"ar": "عربي", "bg": "Български", "ca": "Català", "cs": "Čeština", "da": "Dansk", "de": "Deutsch","en": "English", "es": "Español", "es-mx": "Español - México", "eu": "Euskara", "fa": "فارسی", "fr" : "Français", "he" : "עברית", "hu": "magyar", "it": "Italiano", "ja": "日本語","nl": "Nederlands", "pl": "Polski", "pt-br": "Português - Brasil", "pt": "Português - Portugal", "ro": "Română", "ru": "Русский", "sv": "Svenska", "tr" : "Türkçe", "zh-cn" : "简体中文", "zh-tw" : "正體中文"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
-    "gcmpn": "127332470233",
+    "gcmpn": "moodle-mobile-app",
     "customurlscheme": "moodlemobile",
-    "siteurl": "http://moodle.bath.ac.uk",
+    "siteurl": "https://moodle.bath.ac.uk",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
