@@ -12260,6 +12260,60 @@ p.mma-mod-assign-warning {
     .mm-site_mod_choice .col:first-child {
       border-left: 0; } }
 
+.mma-forum-discussion-link {
+  text-decoration: none; }
+
+.mma-forum-align-right {
+  justify-content: flex-end; }
+
+.mma-forum-border {
+  border-color: #ddd;
+  border-width: 1px;
+  border-style: solid; }
+
+.mma-forum-reply-edit {
+  padding: 8px; }
+
+.mm-site_mod_forum .item.item-heading, .mm-site_mod_forum .mm-grades-table .item-heading.itemcenter, .mm-grades-table .mm-site_mod_forum .item-heading.itemcenter, .mm-site_mod_forum-discussion .item.item-heading, .mm-site_mod_forum-discussion .mm-grades-table .item-heading.itemcenter, .mm-grades-table .mm-site_mod_forum-discussion .item-heading.itemcenter {
+  padding-bottom: 2px; }
+  .mm-site_mod_forum .item.item-heading .mm-subject, .mm-site_mod_forum .mm-grades-table .item-heading.itemcenter .mm-subject, .mm-grades-table .mm-site_mod_forum .item-heading.itemcenter .mm-subject, .mm-site_mod_forum-discussion .item.item-heading .mm-subject, .mm-site_mod_forum-discussion .mm-grades-table .item-heading.itemcenter .mm-subject, .mm-grades-table .mm-site_mod_forum-discussion .item-heading.itemcenter .mm-subject {
+    font-size: 90%; }
+  .mm-site_mod_forum .item.item-heading .item-note, .mm-site_mod_forum .mm-grades-table .item-heading.itemcenter .item-note, .mm-grades-table .mm-site_mod_forum .item-heading.itemcenter .item-note, .mm-site_mod_forum-discussion .item.item-heading .item-note, .mm-site_mod_forum-discussion .mm-grades-table .item-heading.itemcenter .item-note, .mm-grades-table .mm-site_mod_forum-discussion .item-heading.itemcenter .item-note {
+    font-size: 80%;
+    margin-left: 5px; }
+
+.mm-site_mod_forum .card.highlight .item.item-heading, .mm-site_mod_forum .card.highlight .mm-grades-table .item-heading.itemcenter, .mm-grades-table .mm-site_mod_forum .card.highlight .item-heading.itemcenter, .mm-site_mod_forum-discussion .card.highlight .item.item-heading, .mm-site_mod_forum-discussion .card.highlight .mm-grades-table .item-heading.itemcenter, .mm-grades-table .mm-site_mod_forum-discussion .card.highlight .item-heading.itemcenter {
+  background-color: #f5f5f5; }
+  .mm-site_mod_forum .card.highlight .item.item-heading h2, .mm-site_mod_forum .card.highlight .mm-grades-table .item-heading.itemcenter h2, .mm-grades-table .mm-site_mod_forum .card.highlight .item-heading.itemcenter h2, .mm-site_mod_forum .card.highlight .item.item-heading .item-heading, .mm-site_mod_forum .card.highlight .mm-grades-table .item-heading.itemcenter .item-heading, .mm-grades-table .mm-site_mod_forum .card.highlight .item-heading.itemcenter .item-heading, .mm-site_mod_forum-discussion .card.highlight .item.item-heading h2, .mm-site_mod_forum-discussion .card.highlight .mm-grades-table .item-heading.itemcenter h2, .mm-grades-table .mm-site_mod_forum-discussion .card.highlight .item-heading.itemcenter h2, .mm-site_mod_forum-discussion .card.highlight .item.item-heading .item-heading, .mm-site_mod_forum-discussion .card.highlight .mm-grades-table .item-heading.itemcenter .item-heading, .mm-grades-table .mm-site_mod_forum-discussion .card.highlight .item-heading.itemcenter .item-heading {
+    font-weight: bold; }
+
+.mm-nest-cards .mm-nested-card {
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 1px 10px 10px;
+  border-radius: 0;
+  background-color: #fff; }
+  .mm-nest-cards .mm-nested-card .item, .mm-nest-cards .mm-nested-card .mm-grades-table .itemcenter, .mm-grades-table .mm-nest-cards .mm-nested-card .itemcenter {
+    border-left: 0;
+    border-right: 0; }
+  .mm-nest-cards .mm-nested-card .item-media:first-child {
+    border-top: 0; }
+  .mm-nest-cards .mm-nested-card .item-media:last-child {
+    border-bottom: 0; }
+
+.mm-nest-cards .item-divider {
+  display: none; }
+
+.mm-nest-cards .mm-nested {
+  margin-left: 10px; }
+  .mm-nest-cards .mm-nested > article:nth-child(even) > .mm-nested-card > mma-mod-forum-discussion-post > .item-heading {
+    background: #eee; }
+
+.mm-nest-cards .mma-forum-reply-edit {
+  padding: 0;
+  border: 0; }
+
 p.mma-mod-quiz-warning {
   color: #c00; }
 
@@ -12404,60 +12458,6 @@ ion-popover-view {
 .platform-ios ion-popover-view.mma-scorm-popover {
   padding-top: 10px;
   padding-bottom: 10px; }
-
-.mma-forum-discussion-link {
-  text-decoration: none; }
-
-.mma-forum-align-right {
-  justify-content: flex-end; }
-
-.mma-forum-border {
-  border-color: #ddd;
-  border-width: 1px;
-  border-style: solid; }
-
-.mma-forum-reply-edit {
-  padding: 8px; }
-
-.mm-site_mod_forum .item.item-heading, .mm-site_mod_forum .mm-grades-table .item-heading.itemcenter, .mm-grades-table .mm-site_mod_forum .item-heading.itemcenter, .mm-site_mod_forum-discussion .item.item-heading, .mm-site_mod_forum-discussion .mm-grades-table .item-heading.itemcenter, .mm-grades-table .mm-site_mod_forum-discussion .item-heading.itemcenter {
-  padding-bottom: 2px; }
-  .mm-site_mod_forum .item.item-heading .mm-subject, .mm-site_mod_forum .mm-grades-table .item-heading.itemcenter .mm-subject, .mm-grades-table .mm-site_mod_forum .item-heading.itemcenter .mm-subject, .mm-site_mod_forum-discussion .item.item-heading .mm-subject, .mm-site_mod_forum-discussion .mm-grades-table .item-heading.itemcenter .mm-subject, .mm-grades-table .mm-site_mod_forum-discussion .item-heading.itemcenter .mm-subject {
-    font-size: 90%; }
-  .mm-site_mod_forum .item.item-heading .item-note, .mm-site_mod_forum .mm-grades-table .item-heading.itemcenter .item-note, .mm-grades-table .mm-site_mod_forum .item-heading.itemcenter .item-note, .mm-site_mod_forum-discussion .item.item-heading .item-note, .mm-site_mod_forum-discussion .mm-grades-table .item-heading.itemcenter .item-note, .mm-grades-table .mm-site_mod_forum-discussion .item-heading.itemcenter .item-note {
-    font-size: 80%;
-    margin-left: 5px; }
-
-.mm-site_mod_forum .card.highlight .item.item-heading, .mm-site_mod_forum .card.highlight .mm-grades-table .item-heading.itemcenter, .mm-grades-table .mm-site_mod_forum .card.highlight .item-heading.itemcenter, .mm-site_mod_forum-discussion .card.highlight .item.item-heading, .mm-site_mod_forum-discussion .card.highlight .mm-grades-table .item-heading.itemcenter, .mm-grades-table .mm-site_mod_forum-discussion .card.highlight .item-heading.itemcenter {
-  background-color: #f5f5f5; }
-  .mm-site_mod_forum .card.highlight .item.item-heading h2, .mm-site_mod_forum .card.highlight .mm-grades-table .item-heading.itemcenter h2, .mm-grades-table .mm-site_mod_forum .card.highlight .item-heading.itemcenter h2, .mm-site_mod_forum .card.highlight .item.item-heading .item-heading, .mm-site_mod_forum .card.highlight .mm-grades-table .item-heading.itemcenter .item-heading, .mm-grades-table .mm-site_mod_forum .card.highlight .item-heading.itemcenter .item-heading, .mm-site_mod_forum-discussion .card.highlight .item.item-heading h2, .mm-site_mod_forum-discussion .card.highlight .mm-grades-table .item-heading.itemcenter h2, .mm-grades-table .mm-site_mod_forum-discussion .card.highlight .item-heading.itemcenter h2, .mm-site_mod_forum-discussion .card.highlight .item.item-heading .item-heading, .mm-site_mod_forum-discussion .card.highlight .mm-grades-table .item-heading.itemcenter .item-heading, .mm-grades-table .mm-site_mod_forum-discussion .card.highlight .item-heading.itemcenter .item-heading {
-    font-weight: bold; }
-
-.mm-nest-cards .mm-nested-card {
-  padding: 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  margin: 1px 10px 10px;
-  border-radius: 0;
-  background-color: #fff; }
-  .mm-nest-cards .mm-nested-card .item, .mm-nest-cards .mm-nested-card .mm-grades-table .itemcenter, .mm-grades-table .mm-nest-cards .mm-nested-card .itemcenter {
-    border-left: 0;
-    border-right: 0; }
-  .mm-nest-cards .mm-nested-card .item-media:first-child {
-    border-top: 0; }
-  .mm-nest-cards .mm-nested-card .item-media:last-child {
-    border-bottom: 0; }
-
-.mm-nest-cards .item-divider {
-  display: none; }
-
-.mm-nest-cards .mm-nested {
-  margin-left: 10px; }
-  .mm-nest-cards .mm-nested > article:nth-child(even) > .mm-nested-card > mma-mod-forum-discussion-post > .item-heading {
-    background: #eee; }
-
-.mm-nest-cards .mma-forum-reply-edit {
-  padding: 0;
-  border: 0; }
 
 .mma-mod_survey-darkbg {
   background-color: #f1f1f1; }
