@@ -10,7 +10,7 @@
     "wsextservice" : "local_mobile",
     "gcmpn": "127332470233",
     "customurlscheme": "moodlemobile",
-    "siteurl": "http://moodle.bath.ac.uk",
+    "siteurl": "https://moodle.bath.ac.uk",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
