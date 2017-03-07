@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-angular.module('mm', ['ionic', 'mm.core', 'mm.core.comments', 'mm.core.contentlinks', 'mm.core.course', 'mm.core.courses', 'mm.core.fileuploader', 'mm.core.grades', 'mm.core.login', 'mm.core.question', 'mm.core.settings', 'mm.core.sharedfiles', 'mm.core.sidemenu', 'mm.core.textviewer', 'mm.core.user', 'mm.addons.calendar', 'mm.addons.badges', 'mm.addons.competency', 'mm.addons.coursecompletion', 'mm.addons.files', 'mm.addons.frontpage', 'mm.addons.grades', 'mm.addons.messageoutput', 'mm.addons.messages', 'mm.addons.notes', 'mm.addons.notifications', 'mm.addons.participants', 'mm.addons.pushnotifications', 'mm.addons.remotestyles', 'mm.addons.messageoutput_airnotifier', 'mm.addons.mod_assign', 'mm.addons.mod_book', 'mm.addons.mod_chat', 'mm.addons.mod_choice', 'mm.addons.mod_folder', 'mm.addons.mod_forum', 'mm.addons.mod_glossary', 'mm.addons.mod_imscp', 'mm.addons.mod_label', 'mm.addons.mod_lti', 'mm.addons.mod_page', 'mm.addons.mod_quiz', 'mm.addons.mod_resource', 'mm.addons.mod_scorm', 'mm.addons.mod_survey', 'mm.addons.mod_url', 'mm.addons.mod_wiki', 'mm.addons.qbehaviour_adaptive', 'mm.addons.qbehaviour_adaptivenopenalty', 'mm.addons.qbehaviour_deferredcbm', 'mm.addons.qbehaviour_deferredfeedback', 'mm.addons.qbehaviour_immediatecbm', 'mm.addons.qbehaviour_immediatefeedback', 'mm.addons.qbehaviour_informationitem', 'mm.addons.qbehaviour_interactive', 'mm.addons.qbehaviour_interactivecountback', 'mm.addons.qbehaviour_manualgraded', 'mm.addons.qtype_calculated', 'mm.addons.qtype_calculatedmulti', 'mm.addons.qtype_calculatedsimple', 'mm.addons.qtype_ddimageortext', 'mm.addons.qtype_ddmarker', 'mm.addons.qtype_ddwtos', 'mm.addons.qtype_description', 'mm.addons.qtype_essay', 'mm.addons.qtype_gapselect', 'mm.addons.qtype_match', 'mm.addons.qtype_multianswer', 'mm.addons.qtype_multichoice', 'mm.addons.qtype_numerical', 'mm.addons.qtype_randomsamatch', 'mm.addons.qtype_shortanswer', 'mm.addons.qtype_truefalse', 'mm.addons.userprofilefield_checkbox', 'mm.addons.userprofilefield_datetime', 'mm.addons.userprofilefield_menu', 'mm.addons.userprofilefield_text', 'mm.addons.userprofilefield_textarea', 'ngCordova', 'angular-md5', 'pascalprecht.translate', 'ngAria', 'oc.lazyLoad', 'ckeditor',
+angular.module('mm', ['ionic', 'mm.core', 'mm.core.comments', 'mm.core.contentlinks', 'mm.core.course', 'mm.core.courses', 'mm.core.fileuploader', 'mm.core.grades', 'mm.core.login', 'mm.core.question', 'mm.core.settings', 'mm.core.sharedfiles', 'mm.core.sidemenu', 'mm.core.textviewer', 'mm.core.user', 'mm.addons.badges', 'mm.addons.calendar', 'mm.addons.competency', 'mm.addons.frontpage', 'mm.addons.coursecompletion', 'mm.addons.grades', 'mm.addons.messageoutput', 'mm.addons.messages', 'mm.addons.notes', 'mm.addons.notifications', 'mm.addons.participants', 'mm.addons.pushnotifications', 'mm.addons.remotestyles', 'mm.addons.messageoutput_airnotifier', 'mm.addons.mod_assign', 'mm.addons.mod_book', 'mm.addons.mod_chat', 'mm.addons.mod_choice', 'mm.addons.mod_folder', 'mm.addons.mod_forum', 'mm.addons.mod_glossary', 'mm.addons.mod_imscp', 'mm.addons.mod_label', 'mm.addons.mod_lti', 'mm.addons.mod_page', 'mm.addons.mod_quiz', 'mm.addons.mod_resource', 'mm.addons.mod_scorm', 'mm.addons.mod_survey', 'mm.addons.mod_url', 'mm.addons.mod_wiki', 'mm.addons.qbehaviour_adaptive', 'mm.addons.qbehaviour_adaptivenopenalty', 'mm.addons.qbehaviour_deferredcbm', 'mm.addons.qbehaviour_deferredfeedback', 'mm.addons.qbehaviour_immediatecbm', 'mm.addons.qbehaviour_immediatefeedback', 'mm.addons.qbehaviour_informationitem', 'mm.addons.qbehaviour_interactive', 'mm.addons.qbehaviour_interactivecountback', 'mm.addons.qbehaviour_manualgraded', 'mm.addons.qtype_calculated', 'mm.addons.qtype_calculatedmulti', 'mm.addons.qtype_calculatedsimple', 'mm.addons.qtype_ddimageortext', 'mm.addons.qtype_ddmarker', 'mm.addons.qtype_ddwtos', 'mm.addons.qtype_description', 'mm.addons.qtype_essay', 'mm.addons.qtype_gapselect', 'mm.addons.qtype_match', 'mm.addons.qtype_multianswer', 'mm.addons.qtype_multichoice', 'mm.addons.qtype_numerical', 'mm.addons.qtype_randomsamatch', 'mm.addons.qtype_shortanswer', 'mm.addons.qtype_truefalse', 'mm.addons.userprofilefield_checkbox', 'mm.addons.userprofilefield_datetime', 'mm.addons.userprofilefield_menu', 'mm.addons.userprofilefield_text', 'mm.addons.userprofilefield_textarea', 'ngCordova', 'angular-md5', 'pascalprecht.translate', 'ngAria', 'oc.lazyLoad', 'ckeditor',
             'ngMessages'])
 .run(["$ionicPlatform", function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -20159,6 +20159,43 @@ angular.module('mm.core.user')
     return self;
 }]);
 
+angular.module('mm.addons.badges', [])
+.constant('mmaBadgesPriority', 50)
+.constant('mmaBadgesComponent', 'mmaBadges')
+.config(["$stateProvider", "$mmUserDelegateProvider", "mmaBadgesPriority", "$mmContentLinksDelegateProvider", function($stateProvider, $mmUserDelegateProvider, mmaBadgesPriority, $mmContentLinksDelegateProvider) {
+    $stateProvider
+    .state('site.userbadges', {
+        url: '/userbadges',
+        views: {
+            'site': {
+                templateUrl: 'addons/badges/templates/userbadges.html',
+                controller: 'mmaBadgesUserCtrl'
+            }
+        },
+        params: {
+            courseid: null,
+            userid: null
+        }
+    })
+    .state('site.issuedbadge', {
+        url: '/issuedbadge',
+        views: {
+            'site': {
+                templateUrl: 'addons/badges/templates/issuedbadge.html',
+                controller: 'mmaBadgesIssuedCtrl'
+            }
+        },
+        params: {
+            cid: null,
+            uid: null,
+            uniquehash: null
+        }
+    });
+    $mmUserDelegateProvider.registerProfileHandler('mmaBadges', '$mmaBadgesHandlers.userProfile', mmaBadgesPriority);
+    $mmContentLinksDelegateProvider.registerLinkHandler('mmaBadges:myBadges', '$mmaBadgesHandlers.myBadgesLinksHandler');
+    $mmContentLinksDelegateProvider.registerLinkHandler('mmaBadges:badge', '$mmaBadgesHandlers.badgeLinksHandler');
+}]);
+
 angular.module('mm.addons.calendar', [])
 .constant('mmaCalendarDaysInterval', 30)
 .constant('mmaCalendarDefaultNotifTime', 60)
@@ -20217,43 +20254,6 @@ angular.module('mm.addons.calendar', [])
     $mmApp.ready().then(function() {
         $mmaCalendar.scheduleAllSitesEventsNotifications();
     });
-}]);
-
-angular.module('mm.addons.badges', [])
-.constant('mmaBadgesPriority', 50)
-.constant('mmaBadgesComponent', 'mmaBadges')
-.config(["$stateProvider", "$mmUserDelegateProvider", "mmaBadgesPriority", "$mmContentLinksDelegateProvider", function($stateProvider, $mmUserDelegateProvider, mmaBadgesPriority, $mmContentLinksDelegateProvider) {
-    $stateProvider
-    .state('site.userbadges', {
-        url: '/userbadges',
-        views: {
-            'site': {
-                templateUrl: 'addons/badges/templates/userbadges.html',
-                controller: 'mmaBadgesUserCtrl'
-            }
-        },
-        params: {
-            courseid: null,
-            userid: null
-        }
-    })
-    .state('site.issuedbadge', {
-        url: '/issuedbadge',
-        views: {
-            'site': {
-                templateUrl: 'addons/badges/templates/issuedbadge.html',
-                controller: 'mmaBadgesIssuedCtrl'
-            }
-        },
-        params: {
-            cid: null,
-            uid: null,
-            uniquehash: null
-        }
-    });
-    $mmUserDelegateProvider.registerProfileHandler('mmaBadges', '$mmaBadgesHandlers.userProfile', mmaBadgesPriority);
-    $mmContentLinksDelegateProvider.registerLinkHandler('mmaBadges:myBadges', '$mmaBadgesHandlers.myBadgesLinksHandler');
-    $mmContentLinksDelegateProvider.registerLinkHandler('mmaBadges:badge', '$mmaBadgesHandlers.badgeLinksHandler');
 }]);
 
 angular.module('mm.addons.competency', [])
@@ -20355,6 +20355,28 @@ angular.module('mm.addons.competency', [])
     $mmUserDelegateProvider.registerProfileHandler('mmaCompetency:learningPlan', '$mmaCompetencyHandlers.learningPlan',
         mmaCompetencyPriority);
 }]);
+angular.module('mm.addons.frontpage', [])
+.constant('mmaFrontpagePriority', 1000)
+.config(["$stateProvider", "$mmCoursesDelegateProvider", "mmCoreCoursePriority", function($stateProvider, $mmCoursesDelegateProvider, mmCoreCoursePriority) {
+    $stateProvider
+    .state('site.frontpage', {
+        url: '/frontpage',
+        params: {
+            moduleid: null
+        },
+        views: {
+            'site': {
+                templateUrl: 'addons/frontpage/templates/frontpage.html',
+                controller: 'mmaFrontpageCtrl'
+            }
+        }
+    });
+}])
+.config(["$mmSideMenuDelegateProvider", "$mmContentLinksDelegateProvider", "mmaFrontpagePriority", function($mmSideMenuDelegateProvider, $mmContentLinksDelegateProvider, mmaFrontpagePriority) {
+    $mmSideMenuDelegateProvider.registerNavHandler('mmaFrontpage', '$mmaFrontPageHandlers.sideMenuNav', mmaFrontpagePriority);
+    $mmContentLinksDelegateProvider.registerLinkHandler('mmaFrontpage', '$mmaFrontPageHandlers.linksHandler');
+}]);
+
 angular.module('mm.addons.coursecompletion', [])
 .constant('mmaCourseCompletionPriority', 200)
 .constant('mmaCourseCompletionViewCompletionPriority', 200)
@@ -20378,72 +20400,6 @@ angular.module('mm.addons.coursecompletion', [])
             '$mmaCourseCompletionHandlers.viewCompletion', mmaCourseCompletionViewCompletionPriority);
     $mmCoursesDelegateProvider.registerNavHandler('mmaCourseCompletion',
             '$mmaCourseCompletionHandlers.coursesNav', mmaCourseCompletionPriority);
-}]);
-
-angular.module('mm.addons.files', ['mm.core'])
-.constant('mmaFilesMyComponent', 'mmaFilesMy')
-.constant('mmaFilesSiteComponent', 'mmaFilesSite')
-.constant('mmaFilesPriority', 200)
-.config(["$stateProvider", "$mmSideMenuDelegateProvider", "mmaFilesPriority", function($stateProvider, $mmSideMenuDelegateProvider, mmaFilesPriority) {
-    $stateProvider
-        .state('site.files', {
-            url: '/files',
-            views: {
-                'site': {
-                    controller: 'mmaFilesIndexController',
-                    templateUrl: 'addons/files/templates/index.html'
-                }
-            }
-        })
-        .state('site.files-list', {
-            url: '/list',
-            params: {
-                path: false,
-                root: false,
-                title: false
-            },
-            views: {
-                'site': {
-                    controller: 'mmaFilesListController',
-                    templateUrl: 'addons/files/templates/list.html'
-                }
-            }
-        })
-        .state('site.files-choose-site', {
-            url: '/choose-site',
-            params: {
-                file: null
-            },
-            views: {
-                'site': {
-                    controller: 'mmaFilesChooseSiteCtrl',
-                    templateUrl: 'addons/files/templates/choosesite.html'
-                }
-            }
-        });
-    $mmSideMenuDelegateProvider.registerNavHandler('mmaFiles', '$mmaFilesHandlers.sideMenuNav', mmaFilesPriority);
-}]);
-
-angular.module('mm.addons.frontpage', [])
-.constant('mmaFrontpagePriority', 1000)
-.config(["$stateProvider", "$mmCoursesDelegateProvider", "mmCoreCoursePriority", function($stateProvider, $mmCoursesDelegateProvider, mmCoreCoursePriority) {
-    $stateProvider
-    .state('site.frontpage', {
-        url: '/frontpage',
-        params: {
-            moduleid: null
-        },
-        views: {
-            'site': {
-                templateUrl: 'addons/frontpage/templates/frontpage.html',
-                controller: 'mmaFrontpageCtrl'
-            }
-        }
-    });
-}])
-.config(["$mmSideMenuDelegateProvider", "$mmContentLinksDelegateProvider", "mmaFrontpagePriority", function($mmSideMenuDelegateProvider, $mmContentLinksDelegateProvider, mmaFrontpagePriority) {
-    $mmSideMenuDelegateProvider.registerNavHandler('mmaFrontpage', '$mmaFrontPageHandlers.sideMenuNav', mmaFrontpagePriority);
-    $mmContentLinksDelegateProvider.registerLinkHandler('mmaFrontpage', '$mmaFrontPageHandlers.linksHandler');
 }]);
 
 angular.module('mm.addons.grades', [])
@@ -21637,79 +21593,6 @@ angular.module('mm.addons.userprofilefield_textarea', ['mm.core'])
 }]);
 
 angular.module('mm.addons.mod_assign')
-.directive('mmaModAssignFeedbackEditpdf', ["$mmaModAssign", function($mmaModAssign) {
-    return {
-        restrict: 'A',
-        priority: 100,
-        templateUrl: 'addons/mod/assign/feedback/editpdf/template.html',
-        link: function(scope) {
-            if (!scope.plugin) {
-                return;
-            }
-            scope.files = $mmaModAssign.getSubmissionPluginAttachments(scope.plugin);
-        }
-    };
-}]);
-
-angular.module('mm.addons.mod_assign')
-.factory('$mmaModAssignFeedbackEditpdfHandler', ["$mmaModAssign", "$mmFilepool", "$q", "mmaModAssignComponent", function($mmaModAssign, $mmFilepool, $q, mmaModAssignComponent) {
-    var self = {};
-        self.isEnabled = function() {
-        return true;
-    };
-        self.getDirectiveName = function() {
-        return 'mma-mod-assign-feedback-editpdf';
-    };
-        self.getPluginFiles = function(assign, submission, plugin, siteId) {
-        return $mmaModAssign.getSubmissionPluginAttachments(plugin);
-    };
-    return self;
-}])
-.run(["$mmAddonManager", function($mmAddonManager) {
-    var $mmaModAssignFeedbackDelegate = $mmAddonManager.get('$mmaModAssignFeedbackDelegate');
-    if ($mmaModAssignFeedbackDelegate) {
-        $mmaModAssignFeedbackDelegate.registerHandler('mmaModAssignFeedbackEditpdf', 'editpdf',
-                '$mmaModAssignFeedbackEditpdfHandler');
-    }
-}]);
-
-angular.module('mm.addons.mod_assign')
-.directive('mmaModAssignFeedbackFile', ["$mmaModAssign", function($mmaModAssign) {
-    return {
-        restrict: 'A',
-        priority: 100,
-        templateUrl: 'addons/mod/assign/feedback/file/template.html',
-        link: function(scope) {
-            if (!scope.plugin) {
-                return;
-            }
-            scope.files = $mmaModAssign.getSubmissionPluginAttachments(scope.plugin);
-        }
-    };
-}]);
-
-angular.module('mm.addons.mod_assign')
-.factory('$mmaModAssignFeedbackFileHandler', ["$mmaModAssign", "$mmFilepool", "$q", "mmaModAssignComponent", function($mmaModAssign, $mmFilepool, $q, mmaModAssignComponent) {
-    var self = {};
-        self.isEnabled = function() {
-        return true;
-    };
-        self.getDirectiveName = function() {
-        return 'mma-mod-assign-feedback-file';
-    };
-        self.getPluginFiles = function(assign, submission, plugin, siteId) {
-        return $mmaModAssign.getSubmissionPluginAttachments(plugin);
-    };
-    return self;
-}])
-.run(["$mmAddonManager", function($mmAddonManager) {
-    var $mmaModAssignFeedbackDelegate = $mmAddonManager.get('$mmaModAssignFeedbackDelegate');
-    if ($mmaModAssignFeedbackDelegate) {
-        $mmaModAssignFeedbackDelegate.registerHandler('mmaModAssignFeedbackFile', 'file', '$mmaModAssignFeedbackFileHandler');
-    }
-}]);
-
-angular.module('mm.addons.mod_assign')
 .directive('mmaModAssignFeedbackComments', ["$mmaModAssign", "$mmText", "$mmUtil", "$q", "$mmaModAssignFeedbackCommentsHandler", "$mmEvents", "mmaModAssignFeedbackSavedEvent", "$mmSite", "$mmaModAssignOffline", function($mmaModAssign, $mmText, $mmUtil, $q, $mmaModAssignFeedbackCommentsHandler,
         $mmEvents, mmaModAssignFeedbackSavedEvent, $mmSite, $mmaModAssignOffline) {
     function getContents(scope, rteEnabled) {
@@ -21863,6 +21746,79 @@ angular.module('mm.addons.mod_assign')
     if ($mmaModAssignFeedbackDelegate) {
         $mmaModAssignFeedbackDelegate.registerHandler('mmaModAssignFeedbackComments', 'comments',
                 '$mmaModAssignFeedbackCommentsHandler');
+    }
+}]);
+
+angular.module('mm.addons.mod_assign')
+.directive('mmaModAssignFeedbackEditpdf', ["$mmaModAssign", function($mmaModAssign) {
+    return {
+        restrict: 'A',
+        priority: 100,
+        templateUrl: 'addons/mod/assign/feedback/editpdf/template.html',
+        link: function(scope) {
+            if (!scope.plugin) {
+                return;
+            }
+            scope.files = $mmaModAssign.getSubmissionPluginAttachments(scope.plugin);
+        }
+    };
+}]);
+
+angular.module('mm.addons.mod_assign')
+.factory('$mmaModAssignFeedbackEditpdfHandler', ["$mmaModAssign", "$mmFilepool", "$q", "mmaModAssignComponent", function($mmaModAssign, $mmFilepool, $q, mmaModAssignComponent) {
+    var self = {};
+        self.isEnabled = function() {
+        return true;
+    };
+        self.getDirectiveName = function() {
+        return 'mma-mod-assign-feedback-editpdf';
+    };
+        self.getPluginFiles = function(assign, submission, plugin, siteId) {
+        return $mmaModAssign.getSubmissionPluginAttachments(plugin);
+    };
+    return self;
+}])
+.run(["$mmAddonManager", function($mmAddonManager) {
+    var $mmaModAssignFeedbackDelegate = $mmAddonManager.get('$mmaModAssignFeedbackDelegate');
+    if ($mmaModAssignFeedbackDelegate) {
+        $mmaModAssignFeedbackDelegate.registerHandler('mmaModAssignFeedbackEditpdf', 'editpdf',
+                '$mmaModAssignFeedbackEditpdfHandler');
+    }
+}]);
+
+angular.module('mm.addons.mod_assign')
+.directive('mmaModAssignFeedbackFile', ["$mmaModAssign", function($mmaModAssign) {
+    return {
+        restrict: 'A',
+        priority: 100,
+        templateUrl: 'addons/mod/assign/feedback/file/template.html',
+        link: function(scope) {
+            if (!scope.plugin) {
+                return;
+            }
+            scope.files = $mmaModAssign.getSubmissionPluginAttachments(scope.plugin);
+        }
+    };
+}]);
+
+angular.module('mm.addons.mod_assign')
+.factory('$mmaModAssignFeedbackFileHandler', ["$mmaModAssign", "$mmFilepool", "$q", "mmaModAssignComponent", function($mmaModAssign, $mmFilepool, $q, mmaModAssignComponent) {
+    var self = {};
+        self.isEnabled = function() {
+        return true;
+    };
+        self.getDirectiveName = function() {
+        return 'mma-mod-assign-feedback-file';
+    };
+        self.getPluginFiles = function(assign, submission, plugin, siteId) {
+        return $mmaModAssign.getSubmissionPluginAttachments(plugin);
+    };
+    return self;
+}])
+.run(["$mmAddonManager", function($mmAddonManager) {
+    var $mmaModAssignFeedbackDelegate = $mmAddonManager.get('$mmaModAssignFeedbackDelegate');
+    if ($mmaModAssignFeedbackDelegate) {
+        $mmaModAssignFeedbackDelegate.registerHandler('mmaModAssignFeedbackFile', 'file', '$mmaModAssignFeedbackFileHandler');
     }
 }]);
 
@@ -22383,6 +22339,25 @@ angular.module('mm.addons.mod_quiz')
 }]);
 
 angular.module('mm.addons.mod_quiz')
+.factory('$mmaQuizAccessNumAttemptsHandler', function() {
+    var self = {};
+        self.isEnabled = function() {
+        return true;
+    };
+        self.isPreflightCheckRequired = function(quiz, attempt, prefetch, siteId) {
+        return false;
+    };
+    return self;
+})
+.run(["$mmAddonManager", function($mmAddonManager) {
+    var $mmaModQuizAccessRulesDelegate = $mmAddonManager.get('$mmaModQuizAccessRulesDelegate');
+    if ($mmaModQuizAccessRulesDelegate) {
+        $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessNumAttempts', 'quizaccess_numattempts',
+                                '$mmaQuizAccessNumAttemptsHandler');
+    }
+}]);
+
+angular.module('mm.addons.mod_quiz')
 .directive('mmaQuizAccessOfflineAttemptsPreflight', function() {
     return {
         restrict: 'A',
@@ -22447,25 +22422,6 @@ angular.module('mm.addons.mod_quiz')
     if ($mmaModQuizAccessRulesDelegate) {
         $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessOpenCloseDate', 'quizaccess_openclosedate',
                                 '$mmaQuizAccessOpenCloseDateHandler');
-    }
-}]);
-
-angular.module('mm.addons.mod_quiz')
-.factory('$mmaQuizAccessNumAttemptsHandler', function() {
-    var self = {};
-        self.isEnabled = function() {
-        return true;
-    };
-        self.isPreflightCheckRequired = function(quiz, attempt, prefetch, siteId) {
-        return false;
-    };
-    return self;
-})
-.run(["$mmAddonManager", function($mmAddonManager) {
-    var $mmaModQuizAccessRulesDelegate = $mmAddonManager.get('$mmaModQuizAccessRulesDelegate');
-    if ($mmaModQuizAccessRulesDelegate) {
-        $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessNumAttempts', 'quizaccess_numattempts',
-                                '$mmaQuizAccessNumAttemptsHandler');
     }
 }]);
 
@@ -24291,356 +24247,6 @@ angular.module('mm.addons.coursecompletion')
             $mmaCourseCompletionHandlers.clearViewCompletionCache(data.courseid, data.userid);
         }
     });
-}]);
-
-angular.module('mm.addons.files')
-.controller('mmaFilesIndexController', ["$scope", "$mmaFiles", "$mmSite", "$mmUtil", "$mmApp", "$mmaFilesHelper", "$mmEvents", "mmCoreEventSiteUpdated", function($scope, $mmaFiles, $mmSite, $mmUtil, $mmApp, $mmaFilesHelper, $mmEvents,
-            mmCoreEventSiteUpdated) {
-    var updateSiteObserver;
-    function setData() {
-        var canAccessFiles = $mmaFiles.canAccessFiles(),
-            canAccessMyFiles = $mmSite.canAccessMyFiles(),
-            canViewMyFiles = canAccessFiles && !$mmaFiles.isPrivateFilesDisabledInSite();
-        $scope.showPrivateFiles = canViewMyFiles && canAccessMyFiles;
-        $scope.showSiteFiles = !$mmaFiles.isSiteFilesDisabledInSite();
-        $scope.canDownload = $mmSite.canDownloadFiles();
-        $scope.showUpload = !canViewMyFiles && canAccessMyFiles && $mmSite.canUploadFiles() && !$mmaFiles.isUploadDisabledInSite();
-    }
-    setData();
-    $scope.add = function() {
-        $mmaFiles.versionCanUploadFiles().then(function(canUpload) {
-            if (!canUpload) {
-                $mmUtil.showModal('mm.core.notice', 'mma.files.erroruploadnotworking');
-            } else if (!$mmApp.isOnline()) {
-                $mmUtil.showErrorModal('mm.fileuploader.errormustbeonlinetoupload', true);
-            } else {
-                $mmaFilesHelper.selectAndUploadFile();
-            }
-        });
-    };
-    updateSiteObserver = $mmEvents.on(mmCoreEventSiteUpdated, function(siteId) {
-        if ($mmSite.getId() === siteId) {
-            setData();
-        }
-    });
-    $scope.$on('$destroy', function() {
-        updateSiteObserver && updateSiteObserver.off && updateSiteObserver.off();
-    });
-}]);
-
-angular.module('mm.addons.files')
-.controller('mmaFilesListController', ["$q", "$scope", "$stateParams", "$mmaFiles", "$mmSite", "$translate", "$mmUtil", "$mmaFilesHelper", "$mmApp", "mmaFilesMyComponent", "mmaFilesSiteComponent", function($q, $scope, $stateParams, $mmaFiles, $mmSite, $translate, $mmUtil,
-        $mmaFilesHelper, $mmApp, mmaFilesMyComponent, mmaFilesSiteComponent) {
-    var path = $stateParams.path,
-        root = $stateParams.root,
-        promise;
-    $scope.count = -1;
-    $scope.component = root === 'my' ? mmaFilesMyComponent : mmaFilesSiteComponent;
-    function fetchFiles(root, path) {
-        if (!path) {
-            if (root === 'site') {
-                promise = $mmaFiles.getSiteFiles();
-                $scope.title = $translate.instant('mma.files.sitefiles');
-            } else if (root === 'my') {
-                promise = $mmaFiles.getMyFiles();
-                $scope.title = $translate.instant('mma.files.files');
-            } else {
-                promise = $q.reject();
-            }
-        } else {
-            pathdata = JSON.parse(path);
-            promise = $mmaFiles.getFiles(pathdata);
-            $scope.title = $stateParams.title;
-        }
-        return promise.then(function(files) {
-            $scope.files = files.entries;
-            $scope.count = files.count;
-        }).catch(function() {
-            $mmUtil.showErrorModal('mma.files.couldnotloadfiles', true);
-        });
-    }
-    function refreshFiles() {
-        return $mmaFiles.invalidateDirectory(root, path).finally(function() {
-            return fetchFiles(root, path);
-        });
-    }
-    fetchFiles(root, path).finally(function() {
-        $scope.filesLoaded = true;
-    });
-    $scope.refreshFiles = function() {
-        refreshFiles().finally(function() {
-            $scope.$broadcast('scroll.refreshComplete');
-        });
-    };
-    $scope.showUpload = root === 'my' && !path && $mmSite.canUploadFiles() && !$mmaFiles.isUploadDisabledInSite();
-    $scope.add = function() {
-        $mmaFiles.versionCanUploadFiles().then(function(canUpload) {
-            if (!canUpload) {
-                $mmUtil.showModal('mm.core.notice', 'mma.files.erroruploadnotworking');
-            } else if (!$mmApp.isOnline()) {
-                $mmUtil.showErrorModal('mm.fileuploader.errormustbeonlinetoupload', true);
-            } else {
-                $mmaFilesHelper.selectAndUploadFile().then(function() {
-                    $scope.filesLoaded = false;
-                    refreshFiles().finally(function() {
-                        $scope.filesLoaded = true;
-                    });
-                });
-            }
-        });
-    };
-}]);
-
-angular.module('mm.addons.files')
-.factory('$mmaFiles', ["$mmSite", "$mmFS", "$q", "$log", "$mmSitesManager", "md5", function($mmSite, $mmFS, $q, $log, $mmSitesManager, md5) {
-    $log = $log.getInstance('$mmaFiles');
-    var self = {},
-        defaultParams = {
-            "contextid": 0,
-            "component": "",
-            "filearea": "",
-            "itemid": 0,
-            "filepath": "",
-            "filename": ""
-        };
-        self.canAccessFiles = function() {
-        return $mmSite.wsAvailable('core_files_get_files');
-    };
-        self.canMoveFromDraftToPrivate = function(siteId) {
-        siteId = siteId || $mmSite.getId();
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            return site.wsAvailable('core_user_add_user_private_files');
-        });
-    };
-        self.getFiles = function(params) {
-        var deferred = $q.defer(),
-            options = {};
-        options.cacheKey = getFilesListCacheKey(params);
-        $mmSite.read('core_files_get_files', params, options).then(function(result) {
-            var data = {
-                entries: [],
-                count: 0
-            };
-            if (typeof result.files == 'undefined') {
-                deferred.reject();
-                return;
-            }
-            angular.forEach(result.files, function(entry) {
-                entry.link = {};
-                entry.link.contextid = (entry.contextid) ? entry.contextid : "";
-                entry.link.component = (entry.component) ? entry.component : "";
-                entry.link.filearea = (entry.filearea) ? entry.filearea : "";
-                entry.link.itemid = (entry.itemid) ? entry.itemid : 0;
-                entry.link.filepath = (entry.filepath) ? entry.filepath : "";
-                entry.link.filename = (entry.filename) ? entry.filename : "";
-                if (entry.component && entry.isdir) {
-                    entry.link.filename = "";
-                }
-                if (entry.isdir) {
-                    entry.imgpath = $mmFS.getFolderIcon();
-                } else {
-                    entry.imgpath = $mmFS.getFileIcon(entry.filename);
-                }
-                entry.link = JSON.stringify(entry.link);
-                entry.linkId = md5.createHash(entry.link);
-                data.count += 1;
-                data.entries.push(entry);
-            });
-            deferred.resolve(data);
-        }, function() {
-            deferred.reject();
-        });
-        return deferred.promise;
-    };
-        function getFilesListCacheKey(params) {
-        var root = params.component === '' ? 'site' : 'my';
-        return 'mmaFiles:list:' + root + ':' + params.contextid + ':' + params.filepath;
-    }
-        self.getMyFiles = function() {
-        var params = getMyFilesRootParams();
-        return self.getFiles(params);
-    };
-        function getMyFilesListCommonCacheKey() {
-        return 'mmaFiles:list:my';
-    }
-        function getMyFilesRootParams() {
-        var params = angular.copy(defaultParams, {});
-        params.component = "user";
-        params.filearea = "private";
-        params.contextid = -1;
-        params.contextlevel = "user";
-        params.instanceid = $mmSite.getUserId();
-        return params;
-    }
-        self.getSiteFiles = function() {
-        var params = angular.copy(defaultParams, {});
-        return self.getFiles(params);
-    };
-        function getSiteFilesListCommonCacheKey() {
-        return 'mmaFiles:list:site';
-    }
-        self.invalidateDirectory = function(root, path, siteid) {
-        siteid = siteid || $mmSite.getId();
-        var params = {};
-        if (!path) {
-            if (root === 'site') {
-                params = angular.copy(defaultParams, {});
-            } else if (root === 'my') {
-                params = getMyFilesRootParams();
-            }
-        } else {
-            params = JSON.parse(path);
-        }
-        return $mmSitesManager.getSite(siteid).then(function(site) {
-            return site.invalidateWsCacheForKey(getFilesListCacheKey(params));
-        });
-    };
-        self.invalidateMyFiles = function() {
-        return $mmSite.invalidateWsCacheForKeyStartingWith(getMyFilesListCommonCacheKey());
-    };
-        self.invalidateSiteFiles = function() {
-        return $mmSite.invalidateWsCacheForKeyStartingWith(getSiteFilesListCommonCacheKey());
-    };
-        self.isDisabled = function(siteId) {
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            return self.isDisabledInSite(site);
-        });
-    };
-        self.isDisabledInSite = function(site) {
-        site = site || $mmSite;
-        return site.isFeatureDisabled('$mmSideMenuDelegate_mmaFiles');
-    };
-        self.isPluginEnabled = function() {
-        var canAccessMyFiles = $mmSite.canAccessMyFiles(),
-            canViewMyFiles = self.canAccessFiles() && canAccessMyFiles && !self.isPrivateFilesDisabledInSite(),
-            canViewSiteFiles = !self.isSiteFilesDisabledInSite(),
-            canUploadFiles = canAccessMyFiles && $mmSite.canUploadFiles() && !self.isUploadDisabledInSite();
-        return canViewMyFiles || canViewSiteFiles || canUploadFiles;
-    };
-        self.isPrivateFilesDisabled = function(siteId) {
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            return self.isPrivateFilesDisabledInSite(site);
-        });
-    };
-        self.isPrivateFilesDisabledInSite = function(site) {
-        site = site || $mmSite;
-        return site.isFeatureDisabled('files_privatefiles');
-    };
-        self.isSiteFilesDisabled = function(siteId) {
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            return self.isSiteFilesDisabledInSite(site);
-        });
-    };
-        self.isSiteFilesDisabledInSite = function(site) {
-        site = site || $mmSite;
-        return site.isFeatureDisabled('files_sitefiles');
-    };
-        self.isUploadDisabled = function(siteId) {
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            return self.isUploadDisabledInSite(site);
-        });
-    };
-        self.isUploadDisabledInSite = function(site) {
-        site = site || $mmSite;
-        return site.isFeatureDisabled('files_upload');
-    };
-        self.moveFromDraftToPrivate = function(draftId, siteId) {
-        siteId = siteId || $mmSite.getId();
-        var params = {
-                draftid: draftId
-            },
-            preSets = {
-                responseExpected: false
-            };
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            return site.write('core_user_add_user_private_files', params, preSets);
-        });
-    };
-        self.shouldMoveFromDraftToPrivate = function(siteId) {
-        siteId = siteId || $mmSite.getId();
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            return site.isVersionGreaterEqualThan('3.1.0');
-        });
-    };
-        self.versionCanUploadFiles = function(siteId) {
-        siteId = siteId || $mmSite.getId();
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            if (site.isVersionGreaterEqualThan('3.1.1')) {
-                return self.canMoveFromDraftToPrivate(siteId);
-            } else if (site.isVersionGreaterEqualThan('3.1.0')) {
-                return false;
-            }
-            return true;
-        });
-    };
-    return self;
-}]);
-
-angular.module('mm.addons.files')
-.factory('$mmaFilesHandlers', ["$log", "$mmaFiles", function($log, $mmaFiles) {
-    $log = $log.getInstance('$mmaFilesHandlers');
-    var self = {};
-        self.sideMenuNav = function() {
-        var self = {};
-                self.isEnabled = function() {
-            return $mmaFiles.isPluginEnabled();
-        };
-                self.getController = function() {
-                        return function($scope) {
-                $scope.icon = 'ion-folder';
-                $scope.title = 'mma.files.files';
-                $scope.state = 'site.files';
-                $scope.class = 'mma-files-handler';
-            };
-        };
-        return self;
-    };
-    return self;
-}]);
-
-angular.module('mm.addons.files')
-.factory('$mmaFilesHelper', ["$q", "$mmUtil", "$log", "$mmaFiles", "$mmFileUploaderHelper", "$mmSite", function($q, $mmUtil, $log, $mmaFiles, $mmFileUploaderHelper, $mmSite) {
-    $log = $log.getInstance('$mmaFilesHelper');
-    var self = {};
-        self.selectAndUploadFile = function() {
-        var maxSize = $mmSite.getInfo().usermaxuploadfilesize,
-            userQuota = $mmSite.getInfo().userquota;
-        if (userQuota === 0) {
-            userQuota = -1;
-        }
-        if (typeof maxSize == 'undefined') {
-            if (typeof userQuota != 'undefined') {
-                maxSize = userQuota;
-            } else {
-                maxSize = -1;
-            }
-        } else if (typeof userQuota != 'undefined') {
-            maxSize = Math.min(maxSize, userQuota);
-        }
-        return $mmFileUploaderHelper.selectAndUploadFile(maxSize).then(function(result) {
-            return $mmaFiles.shouldMoveFromDraftToPrivate().then(function(move) {
-                if (move) {
-                    if (!result) {
-                        return $q.reject();
-                    }
-                    var modal = $mmUtil.showModalLoading('mm.fileuploader.uploading', true);
-                    return $mmaFiles.moveFromDraftToPrivate(result.itemid).catch(function(error) {
-                        if (error) {
-                            $mmUtil.showErrorModal(error);
-                        } else {
-                            $mmUtil.showErrorModal('mm.fileuploader.errorwhileuploading', true);
-                        }
-                        return $q.reject();
-                    }).finally(function() {
-                        modal.dismiss();
-                    });
-                }
-            });
-        }).then(function() {
-            $mmUtil.showModal('mm.core.success', 'mm.fileuploader.fileuploaded');
-        });
-    };
-    return self;
 }]);
 
 angular.module('mm.addons.frontpage')
@@ -27063,6 +26669,483 @@ angular.module('mm.addons.messages')
     return self;
 }]);
 
+angular.module('mm.addons.notifications')
+.controller('mmaNotificationsListCtrl', ["$scope", "$mmUtil", "$mmaNotifications", "mmaNotificationsListLimit", "$mmAddonManager", "mmUserProfileState", "$q", "$mmEvents", "$mmSite", "mmaNotificationsReadChangedEvent", "mmaNotificationsReadCronEvent", "$state", function($scope, $mmUtil, $mmaNotifications, mmaNotificationsListLimit, $mmAddonManager,
+            mmUserProfileState, $q, $mmEvents, $mmSite, mmaNotificationsReadChangedEvent, mmaNotificationsReadCronEvent, $state) {
+    var readCount = 0,
+        unreadCount = 0,
+        siteId = $mmSite.getId(),
+        $mmPushNotificationsDelegate = $mmAddonManager.get('$mmPushNotificationsDelegate'),
+        cronObserver;
+    $scope.notifications = [];
+    $scope.userStateName = mmUserProfileState;
+    function fetchNotifications(refresh) {
+        if (refresh) {
+            readCount = 0;
+            unreadCount = 0;
+        }
+        return $mmaNotifications.getUnreadNotifications(unreadCount, mmaNotificationsListLimit).then(function(unread) {
+            var promise;
+            unreadCount += unread.length;
+            if (unread.length < mmaNotificationsListLimit) {
+                var readLimit = mmaNotificationsListLimit - unread.length;
+                promise = $mmaNotifications.getReadNotifications(readCount, readLimit).then(function(read) {
+                    readCount += read.length;
+                    if (refresh) {
+                        $scope.notifications = unread.concat(read);
+                    } else {
+                        $scope.notifications = $scope.notifications.concat(unread).concat(read);
+                    }
+                    $scope.canLoadMore = read.length >= readLimit;
+                }, function(error) {
+                    if (unread.length == 0) {
+                        $mmUtil.showErrorModalDefault(error, 'mma.notifications.errorgetnotifications', true);
+                        $scope.canLoadMore = false;
+                    }
+                });
+            } else {
+                promise = $q.when();
+                if (refresh) {
+                    $scope.notifications = unread;
+                } else {
+                    $scope.notifications = $scope.notifications.concat(unread);
+                }
+                $scope.canLoadMore = true;
+            }
+            return promise.then(function() {
+                markNotificationsAsRead(unread);
+            });
+        }, function(error) {
+            $mmUtil.showErrorModalDefault(error, 'mma.notifications.errorgetnotifications', true);
+            $scope.canLoadMore = false;
+        });
+    }
+    fetchNotifications().finally(function() {
+        $scope.notificationsLoaded = true;
+    });
+    cronObserver = $mmEvents.on(mmaNotificationsReadCronEvent, function(data) {
+        if ($state.current.name == 'site.notifications' && data && (data.siteid == siteId || !data.siteid)) {
+            refreshData();
+        }
+    });
+    if ($mmPushNotificationsDelegate) {
+        $mmPushNotificationsDelegate.registerReceiveHandler('mmaNotifications:discussions', function(notification) {
+            if ($state.current.name == 'site.notifications' && $mmUtil.isTrueOrOne(notification.notif) &&
+                    notification.site == siteId) {
+                refreshData();
+            }
+        });
+    }
+    var skip = true;
+    $scope.$on('$ionicView.enter', function() {
+        if (skip) {
+            skip = false;
+            return;
+        }
+        $scope.notificationsLoaded = false;
+        refreshData().finally(function() {
+            $scope.notificationsLoaded = true;
+        });
+    });
+    function markNotificationsAsRead(notifications) {
+        if (notifications.length > 0) {
+            var promises = [];
+            angular.forEach(notifications, function(notification) {
+                promises.push($mmaNotifications.markNotificationRead(notification.id));
+            });
+            $q.all(promises).finally(function() {
+                $mmaNotifications.invalidateNotificationsList().finally(function() {
+                    $mmEvents.trigger(mmaNotificationsReadChangedEvent, {siteid: siteId});
+                });
+            });
+        }
+    }
+    function refreshData() {
+        return $mmaNotifications.invalidateNotificationsList().finally(function() {
+            return fetchNotifications(true);
+        });
+    }
+    $scope.refreshNotifications = function() {
+        refreshData().finally(function() {
+            $scope.$broadcast('scroll.refreshComplete');
+        });
+    };
+    $scope.loadMoreNotifications = function(){
+        fetchNotifications().finally(function() {
+            $scope.$broadcast('scroll.infiniteScrollComplete');
+        });
+    };
+    $scope.$on('$destroy', function() {
+        cronObserver && cronObserver.off && cronObserver.off();
+        if ($mmPushNotificationsDelegate) {
+            $mmPushNotificationsDelegate.unregisterReceiveHandler('mmaNotifications:discussions');
+        }
+    });
+}]);
+
+angular.module('mm.addons.notifications')
+.controller('mmaNotificationsPreferencesCtrl', ["$scope", "$mmaNotifications", "$mmUtil", "$ionicPlatform", "$mmUser", "$mmaMessageOutputDelegate", "$q", "$timeout", "$mmSettingsHelper", function($scope, $mmaNotifications, $mmUtil, $ionicPlatform, $mmUser,
+            $mmaMessageOutputDelegate, $q, $timeout, $mmSettingsHelper) {
+    var updateTimeout;
+    $scope.isTablet = $ionicPlatform.isTablet();
+    function fetchPreferences() {
+        return $mmaNotifications.getNotificationPreferences().then(function(preferences) {
+            if (!$scope.currentProcessor) {
+                $scope.currentProcessor = $mmSettingsHelper.getProcessor(preferences.processors, 'airnotifier');
+            }
+            if (!$scope.currentProcessor) {
+                return $q.reject('No processor found');
+            }
+            preferences.disableall = !!preferences.disableall;
+            $scope.preferences = preferences;
+            loadProcessor($scope.currentProcessor);
+        }).catch(function(message) {
+            $mmUtil.showErrorModal(message);
+        }).finally(function() {
+            $scope.preferencesLoaded = true;
+        });
+    }
+    function loadProcessor(processor) {
+        if (!processor) {
+            return;
+        }
+        $scope.currentProcessor = processor;
+        $scope.components = $mmSettingsHelper.getProcessorComponents(processor.name, $scope.preferences.components);
+        processor.supported = $mmaMessageOutputDelegate.hasHandler(processor.name);
+        if (processor.supported) {
+            processor.preferencesLabel = $mmaMessageOutputDelegate.getPreferenceLabel(processor.name);
+        }
+    }
+    function updatePreferencesAfterDelay() {
+        $timeout.cancel(updateTimeout);
+        updateTimeout = $timeout(function() {
+            updateTimeout = null;
+            updatePreferences();
+        }, 5000);
+    }
+    function updatePreferences() {
+        $mmaNotifications.invalidateNotificationPreferences().finally(function() {
+            $mmaNotifications.getNotificationPreferences();
+        });
+    }
+    fetchPreferences();
+    $scope.refreshPreferences = function() {
+        $mmaNotifications.invalidateNotificationPreferences().finally(function() {
+            fetchPreferences().finally(function() {
+                $scope.$broadcast('scroll.refreshComplete');
+            });
+        });
+    };
+    $scope.changeProcessor = function(processor) {
+        loadProcessor(processor);
+    };
+    $scope.openProcessorPreferences = function() {
+        if (!$scope.currentProcessor || !$scope.currentProcessor.hassettings || !$scope.currentProcessor.supported) {
+            return;
+        }
+        $mmaMessageOutputDelegate.openPreferencesViewFor($scope.currentProcessor);
+    };
+    $scope.changePreference = function(notification, state) {
+        var processorState = notification.currentProcessor[state],
+            preferenceName = notification.preferencekey + '_' + processorState.name,
+            value;
+        angular.forEach(notification.processors, function(processor) {
+            if (processor[state].checked) {
+                if (!value) {
+                    value = processor.name;
+                } else {
+                    value += ',' + processor.name;
+                }
+            }
+        });
+        if (!value) {
+            value = 'none';
+        }
+        processorState.updating = true;
+        $mmUser.updateUserPreference(preferenceName, value).then(function() {
+            updatePreferencesAfterDelay();
+        }).catch(function(message) {
+            $mmUtil.showErrorModal(message);
+            notification.currentProcessor[state].checked = !notification.currentProcessor[state].checked;
+        }).finally(function() {
+            processorState.updating = false;
+        });
+    };
+    $scope.disableAll = function(disable) {
+        var modal = $mmUtil.showModalLoading('mm.core.sending', true);
+        $mmUser.updateUserPreferences([], disable).then(function() {
+            updatePreferencesAfterDelay();
+        }).catch(function(message) {
+            $mmUtil.showErrorModal(message);
+            $scope.preferences.disableall = !$scope.preferences.disableall;
+        }).finally(function() {
+            modal.dismiss();
+        });
+    };
+    $scope.$on('$destroy', function() {
+        if (updateTimeout) {
+            $timeout.cancel(updateTimeout);
+            updatePreferences();
+        }
+    });
+}]);
+
+angular.module('mm.addons.notifications')
+.directive('mmaNotificationsActions', ["$log", "$mmContentLinksDelegate", function($log, $mmContentLinksDelegate) {
+    $log = $log.getInstance('mmaNotificationsActions');
+    function link(scope) {
+        if (scope.contexturl) {
+            $mmContentLinksDelegate.getActionsFor(scope.contexturl, scope.courseid).then(function(actions) {
+                scope.actions = actions;
+            });
+        }
+    }
+    return {
+        link: link,
+        restrict: 'E',
+        scope: {
+            contexturl: '=',
+            courseid: '='
+        },
+        templateUrl: 'addons/notifications/templates/actions.html',
+    };
+}]);
+
+angular.module('mm.addons.notifications')
+.filter('mmaNotificationsFormat', ["$mmText", function($mmText) {
+  return function(text) {
+    text = text.replace(/-{4,}/ig, '');
+    text = $mmText.replaceNewLines(text, '<br>');
+    return text;
+  };
+}]);
+
+angular.module('mm.addons.notifications')
+.factory('$mmaNotificationsHandlers', ["$log", "$mmaNotifications", "$mmEvents", "$mmSitesManager", "$mmUtil", "mmaNotificationsReadChangedEvent", "mmaNotificationsReadCronEvent", "$mmAddonManager", function($log, $mmaNotifications, $mmEvents, $mmSitesManager, $mmUtil,
+        mmaNotificationsReadChangedEvent, mmaNotificationsReadCronEvent, $mmAddonManager) {
+    $log = $log.getInstance('$mmaNotificationsHandlers');
+    var self = {};
+        self.sideMenuNav = function() {
+        var self = {};
+                self.isEnabled = function() {
+            return $mmaNotifications.isPluginEnabled();
+        };
+                self.getController = function() {
+                        return function($scope) {
+                var $mmPushNotificationsDelegate = $mmAddonManager.get('$mmPushNotificationsDelegate'),
+                    $mmaPushNotifications = $mmAddonManager.get('$mmaPushNotifications'),
+                    readChangedObserver, cronObserver;
+                $scope.icon = 'ion-ios-bell';
+                $scope.title = 'mma.notifications.notifications';
+                $scope.state = 'site.notifications';
+                $scope.class = 'mma-notifications-handler';
+                if ($mmaNotifications.isNotificationCountEnabled(true)) {
+                    $scope.loading = true;
+                    updateUnreadNotificationsCount().finally(function() {
+                        $scope.loading = false;
+                    });
+                    readChangedObserver = $mmEvents.on(mmaNotificationsReadChangedEvent, function(data) {
+                        if (data && $mmSitesManager.isCurrentSite(data.siteid)) {
+                            updateUnreadNotificationsCount(data.siteid);
+                        }
+                    });
+                    cronObserver = $mmEvents.on(mmaNotificationsReadCronEvent, function(data) {
+                        if (data && $mmSitesManager.isCurrentSite(data.siteid)) {
+                            updateUnreadNotificationsCount(data.siteid);
+                        }
+                    });
+                    if ($mmPushNotificationsDelegate) {
+                        $mmPushNotificationsDelegate.registerReceiveHandler('mmaNotifications:sidemenu', function(notification) {
+                            if ($mmUtil.isTrueOrOne(notification.notif) && $mmSitesManager.isCurrentSite(notification.site)) {
+                                updateUnreadNotificationsCount(notification.site);
+                            }
+                        });
+                        $mmPushNotificationsDelegate.registerCounterHandler('mmaNotifications');
+                    }
+                    function updateUnreadNotificationsCount(siteId) {
+                        return $mmaNotifications.getUnreadNotificationsCount().then(function(unread) {
+                            $scope.badge = parseInt(unread, 10) > 0 ? unread : '';
+                            if ($mmaPushNotifications) {
+                                $mmaPushNotifications.updateAddonCounter(siteId, 'mmaNotifications', unread);
+                            }
+                        });
+                    }
+                }
+                $scope.$on('$destroy', function() {
+                    readChangedObserver && readChangedObserver.off && readChangedObserver.off();
+                    cronObserver && cronObserver.off && cronObserver.off();
+                    if ($mmPushNotificationsDelegate) {
+                        $mmPushNotificationsDelegate.unregisterReceiveHandler('mmaNotifications:sidemenu');
+                    }
+                });
+            };
+        };
+                self.execute = function(siteId) {
+            if ($mmSitesManager.isCurrentSite(siteId) && $mmaNotifications.isNotificationCountEnabled(true)) {
+                $mmEvents.trigger(mmaNotificationsReadCronEvent, {
+                    siteid: siteId
+                });
+            }
+        };
+                self.getInterval = function() {
+            return 600000;
+        };
+                self.isSync = function() {
+            return !$mmaNotifications.isNotificationCountEnabled();
+        };
+                self.canManualSync = function() {
+            return true;
+        };
+                self.usesNetwork = function() {
+            return true;
+        };
+        return self;
+    };
+        self.preferences = function() {
+        var self = {};
+                self.isEnabled = function() {
+            return $mmaNotifications.isNotificationPreferencesEnabled();
+        };
+                self.getController = function() {
+            return function($scope) {
+                $scope.title = 'mma.notifications.notificationpreferences';
+                $scope.class = 'mma-notifications-notificationpreferences-handler';
+                $scope.state = 'site.notifications-preferences';
+            };
+        };
+        return self;
+    };
+    return self;
+}]);
+
+angular.module('mm.addons.notifications')
+.factory('$mmaNotifications', ["$q", "$log", "$mmSite", "$mmSitesManager", "$mmUser", "$mmUtil", "mmaNotificationsListLimit", function($q, $log, $mmSite, $mmSitesManager, $mmUser, $mmUtil, mmaNotificationsListLimit) {
+    $log = $log.getInstance('$mmaNotifications');
+    var self = {};
+    function formatNotificationsData(notifications) {
+        angular.forEach(notifications, function(notification) {
+            if (notification.contexturl && notification.contexturl.indexOf('/mod/forum/')) {
+                notification.mobiletext = notification.smallmessage;
+            } else {
+                notification.mobiletext = notification.fullmessage;
+            }
+            var cid = notification.fullmessagehtml.match(/course\/view\.php\?id=([^"]*)/);
+            if (cid && cid[1]) {
+                notification.courseid = cid[1];
+            }
+            $mmUser.getProfile(notification.useridfrom, notification.courseid, true).then(function(user) {
+                notification.profileimageurlfrom = user.profileimageurl;
+            });
+        });
+    }
+        function getNotificationPreferencesCacheKey() {
+        return 'mmaNotifications:notificationPreferences';
+    }
+        self.getNotificationPreferences = function(siteId) {
+        $log.debug('Get notification preferences');
+        return $mmSitesManager.getSite(siteId).then(function(site) {
+            var preSets = {
+                    cacheKey: getNotificationPreferencesCacheKey()
+                };
+            return site.read('core_message_get_user_notification_preferences', {}, preSets).then(function(data) {
+                return data.preferences;
+            });
+        });
+    };
+        function getNotificationsCacheKey() {
+        return 'mmaNotifications:list';
+    }
+        self.getNotifications = function(read, limitFrom, limitNumber) {
+        limitFrom = limitFrom || 0;
+        limitNumber = limitNumber || mmaNotificationsListLimit;
+        $log.debug('Get ' + (read ? 'read' : 'unread') + ' notifications from ' + limitFrom + '. Limit: ' + limitNumber);
+        var data = {
+            useridto: $mmSite.getUserId(),
+            useridfrom: 0,
+            type: 'notifications',
+            read: read ? 1 : 0,
+            newestfirst: 1,
+            limitfrom: limitFrom,
+            limitnum: limitNumber
+        };
+        var preSets = {
+            cacheKey: getNotificationsCacheKey()
+        };
+        return $mmSite.read('core_message_get_messages', data, preSets).then(function(response) {
+            if (response.messages) {
+                var notifications = response.messages;
+                formatNotificationsData(notifications);
+                return notifications;
+            } else {
+                return $q.reject();
+            }
+        });
+    };
+        self.getReadNotifications = function(limitFrom, limitNumber) {
+        return self.getNotifications(true, limitFrom, limitNumber);
+    };
+        self.getUnreadNotifications = function(limitFrom, limitNumber) {
+        return self.getNotifications(false, limitFrom, limitNumber);
+    };
+        self.getUnreadNotificationsCount = function(userId, siteId) {
+        return $mmSitesManager.getSite(siteId).then(function(site) {
+            if (site.wsAvailable('message_popup_get_unread_popup_notification_count')) {
+                userId = userId || site.getUserId();
+                var params = {
+                        useridto: userId
+                    },
+                    preSets = {
+                        getFromCache: 0,
+                        emergencyCache: 0,
+                        saveToCache: 0,
+                        typeExpected: 'number'
+                    };
+                return site.read('message_popup_get_unread_popup_notification_count', params, preSets).catch(function() {
+                    return 0;
+                });
+            }
+            return self.getNotifications(false, 0, mmaNotificationsListLimit + 1).then(function(unread) {
+                return (unread.length > mmaNotificationsListLimit) ? unread.length + "+" : unread.length;
+            }).catch(function() {
+                return 0;
+            });
+        });
+    };
+        self.markNotificationRead = function(notificationId) {
+        var params = {
+                'messageid': notificationId,
+                'timeread': $mmUtil.timestamp()
+            };
+        return $mmSite.write('core_message_mark_message_read', params);
+    };
+        self.invalidateNotificationPreferences = function(siteId) {
+        return $mmSitesManager.getSite(siteId).then(function(site) {
+            return site.invalidateWsCacheForKey(getNotificationPreferencesCacheKey());
+        });
+    };
+        self.invalidateNotificationsList = function() {
+        return $mmSite.invalidateWsCacheForKey(getNotificationsCacheKey());
+    };
+        self.isNotificationCountEnabled = function(useFallback) {
+        return $mmSite.wsAvailable('message_popup_get_unread_popup_notification_count') ||
+            (useFallback && $mmSite.wsAvailable('core_message_get_messages'));
+    };
+        self.isNotificationPreferencesEnabled = function() {
+        return $mmSite.wsAvailable('core_message_get_user_notification_preferences');
+    };
+        self.isPluginEnabled = function() {
+        return $mmSite.wsAvailable('core_message_get_messages');
+    };
+        self.isPluginEnabledForSite = function(siteid) {
+        return $mmSitesManager.getSite(siteid).then(function(site) {
+            if (!site.wsAvailable('core_message_get_messages')) {
+                return $q.reject();
+            }
+        });
+    };
+    return self;
+}]);
+
 angular.module('mm.addons.notes')
 .controller('mmaNotesListCtrl', ["$scope", "$stateParams", "$mmUtil", "$mmaNotes", "$mmSite", "$translate", "$mmEvents", "$mmaNotesSync", "$q", "$mmText", "$ionicScrollDelegate", "mmaNotesAutomSyncedEvent", function($scope, $stateParams, $mmUtil, $mmaNotes, $mmSite, $translate, $mmEvents, $mmaNotesSync,
             $q, $mmText, $ionicScrollDelegate, mmaNotesAutomSyncedEvent) {
@@ -27704,483 +27787,6 @@ angular.module('mm.addons.notes')
             return warnings;
         });
         return self.addOngoingSync(courseId, syncPromise, siteId);
-    };
-    return self;
-}]);
-
-angular.module('mm.addons.notifications')
-.controller('mmaNotificationsListCtrl', ["$scope", "$mmUtil", "$mmaNotifications", "mmaNotificationsListLimit", "$mmAddonManager", "mmUserProfileState", "$q", "$mmEvents", "$mmSite", "mmaNotificationsReadChangedEvent", "mmaNotificationsReadCronEvent", "$state", function($scope, $mmUtil, $mmaNotifications, mmaNotificationsListLimit, $mmAddonManager,
-            mmUserProfileState, $q, $mmEvents, $mmSite, mmaNotificationsReadChangedEvent, mmaNotificationsReadCronEvent, $state) {
-    var readCount = 0,
-        unreadCount = 0,
-        siteId = $mmSite.getId(),
-        $mmPushNotificationsDelegate = $mmAddonManager.get('$mmPushNotificationsDelegate'),
-        cronObserver;
-    $scope.notifications = [];
-    $scope.userStateName = mmUserProfileState;
-    function fetchNotifications(refresh) {
-        if (refresh) {
-            readCount = 0;
-            unreadCount = 0;
-        }
-        return $mmaNotifications.getUnreadNotifications(unreadCount, mmaNotificationsListLimit).then(function(unread) {
-            var promise;
-            unreadCount += unread.length;
-            if (unread.length < mmaNotificationsListLimit) {
-                var readLimit = mmaNotificationsListLimit - unread.length;
-                promise = $mmaNotifications.getReadNotifications(readCount, readLimit).then(function(read) {
-                    readCount += read.length;
-                    if (refresh) {
-                        $scope.notifications = unread.concat(read);
-                    } else {
-                        $scope.notifications = $scope.notifications.concat(unread).concat(read);
-                    }
-                    $scope.canLoadMore = read.length >= readLimit;
-                }, function(error) {
-                    if (unread.length == 0) {
-                        $mmUtil.showErrorModalDefault(error, 'mma.notifications.errorgetnotifications', true);
-                        $scope.canLoadMore = false;
-                    }
-                });
-            } else {
-                promise = $q.when();
-                if (refresh) {
-                    $scope.notifications = unread;
-                } else {
-                    $scope.notifications = $scope.notifications.concat(unread);
-                }
-                $scope.canLoadMore = true;
-            }
-            return promise.then(function() {
-                markNotificationsAsRead(unread);
-            });
-        }, function(error) {
-            $mmUtil.showErrorModalDefault(error, 'mma.notifications.errorgetnotifications', true);
-            $scope.canLoadMore = false;
-        });
-    }
-    fetchNotifications().finally(function() {
-        $scope.notificationsLoaded = true;
-    });
-    cronObserver = $mmEvents.on(mmaNotificationsReadCronEvent, function(data) {
-        if ($state.current.name == 'site.notifications' && data && (data.siteid == siteId || !data.siteid)) {
-            refreshData();
-        }
-    });
-    if ($mmPushNotificationsDelegate) {
-        $mmPushNotificationsDelegate.registerReceiveHandler('mmaNotifications:discussions', function(notification) {
-            if ($state.current.name == 'site.notifications' && $mmUtil.isTrueOrOne(notification.notif) &&
-                    notification.site == siteId) {
-                refreshData();
-            }
-        });
-    }
-    var skip = true;
-    $scope.$on('$ionicView.enter', function() {
-        if (skip) {
-            skip = false;
-            return;
-        }
-        $scope.notificationsLoaded = false;
-        refreshData().finally(function() {
-            $scope.notificationsLoaded = true;
-        });
-    });
-    function markNotificationsAsRead(notifications) {
-        if (notifications.length > 0) {
-            var promises = [];
-            angular.forEach(notifications, function(notification) {
-                promises.push($mmaNotifications.markNotificationRead(notification.id));
-            });
-            $q.all(promises).finally(function() {
-                $mmaNotifications.invalidateNotificationsList().finally(function() {
-                    $mmEvents.trigger(mmaNotificationsReadChangedEvent, {siteid: siteId});
-                });
-            });
-        }
-    }
-    function refreshData() {
-        return $mmaNotifications.invalidateNotificationsList().finally(function() {
-            return fetchNotifications(true);
-        });
-    }
-    $scope.refreshNotifications = function() {
-        refreshData().finally(function() {
-            $scope.$broadcast('scroll.refreshComplete');
-        });
-    };
-    $scope.loadMoreNotifications = function(){
-        fetchNotifications().finally(function() {
-            $scope.$broadcast('scroll.infiniteScrollComplete');
-        });
-    };
-    $scope.$on('$destroy', function() {
-        cronObserver && cronObserver.off && cronObserver.off();
-        if ($mmPushNotificationsDelegate) {
-            $mmPushNotificationsDelegate.unregisterReceiveHandler('mmaNotifications:discussions');
-        }
-    });
-}]);
-
-angular.module('mm.addons.notifications')
-.controller('mmaNotificationsPreferencesCtrl', ["$scope", "$mmaNotifications", "$mmUtil", "$ionicPlatform", "$mmUser", "$mmaMessageOutputDelegate", "$q", "$timeout", "$mmSettingsHelper", function($scope, $mmaNotifications, $mmUtil, $ionicPlatform, $mmUser,
-            $mmaMessageOutputDelegate, $q, $timeout, $mmSettingsHelper) {
-    var updateTimeout;
-    $scope.isTablet = $ionicPlatform.isTablet();
-    function fetchPreferences() {
-        return $mmaNotifications.getNotificationPreferences().then(function(preferences) {
-            if (!$scope.currentProcessor) {
-                $scope.currentProcessor = $mmSettingsHelper.getProcessor(preferences.processors, 'airnotifier');
-            }
-            if (!$scope.currentProcessor) {
-                return $q.reject('No processor found');
-            }
-            preferences.disableall = !!preferences.disableall;
-            $scope.preferences = preferences;
-            loadProcessor($scope.currentProcessor);
-        }).catch(function(message) {
-            $mmUtil.showErrorModal(message);
-        }).finally(function() {
-            $scope.preferencesLoaded = true;
-        });
-    }
-    function loadProcessor(processor) {
-        if (!processor) {
-            return;
-        }
-        $scope.currentProcessor = processor;
-        $scope.components = $mmSettingsHelper.getProcessorComponents(processor.name, $scope.preferences.components);
-        processor.supported = $mmaMessageOutputDelegate.hasHandler(processor.name);
-        if (processor.supported) {
-            processor.preferencesLabel = $mmaMessageOutputDelegate.getPreferenceLabel(processor.name);
-        }
-    }
-    function updatePreferencesAfterDelay() {
-        $timeout.cancel(updateTimeout);
-        updateTimeout = $timeout(function() {
-            updateTimeout = null;
-            updatePreferences();
-        }, 5000);
-    }
-    function updatePreferences() {
-        $mmaNotifications.invalidateNotificationPreferences().finally(function() {
-            $mmaNotifications.getNotificationPreferences();
-        });
-    }
-    fetchPreferences();
-    $scope.refreshPreferences = function() {
-        $mmaNotifications.invalidateNotificationPreferences().finally(function() {
-            fetchPreferences().finally(function() {
-                $scope.$broadcast('scroll.refreshComplete');
-            });
-        });
-    };
-    $scope.changeProcessor = function(processor) {
-        loadProcessor(processor);
-    };
-    $scope.openProcessorPreferences = function() {
-        if (!$scope.currentProcessor || !$scope.currentProcessor.hassettings || !$scope.currentProcessor.supported) {
-            return;
-        }
-        $mmaMessageOutputDelegate.openPreferencesViewFor($scope.currentProcessor);
-    };
-    $scope.changePreference = function(notification, state) {
-        var processorState = notification.currentProcessor[state],
-            preferenceName = notification.preferencekey + '_' + processorState.name,
-            value;
-        angular.forEach(notification.processors, function(processor) {
-            if (processor[state].checked) {
-                if (!value) {
-                    value = processor.name;
-                } else {
-                    value += ',' + processor.name;
-                }
-            }
-        });
-        if (!value) {
-            value = 'none';
-        }
-        processorState.updating = true;
-        $mmUser.updateUserPreference(preferenceName, value).then(function() {
-            updatePreferencesAfterDelay();
-        }).catch(function(message) {
-            $mmUtil.showErrorModal(message);
-            notification.currentProcessor[state].checked = !notification.currentProcessor[state].checked;
-        }).finally(function() {
-            processorState.updating = false;
-        });
-    };
-    $scope.disableAll = function(disable) {
-        var modal = $mmUtil.showModalLoading('mm.core.sending', true);
-        $mmUser.updateUserPreferences([], disable).then(function() {
-            updatePreferencesAfterDelay();
-        }).catch(function(message) {
-            $mmUtil.showErrorModal(message);
-            $scope.preferences.disableall = !$scope.preferences.disableall;
-        }).finally(function() {
-            modal.dismiss();
-        });
-    };
-    $scope.$on('$destroy', function() {
-        if (updateTimeout) {
-            $timeout.cancel(updateTimeout);
-            updatePreferences();
-        }
-    });
-}]);
-
-angular.module('mm.addons.notifications')
-.directive('mmaNotificationsActions', ["$log", "$mmContentLinksDelegate", function($log, $mmContentLinksDelegate) {
-    $log = $log.getInstance('mmaNotificationsActions');
-    function link(scope) {
-        if (scope.contexturl) {
-            $mmContentLinksDelegate.getActionsFor(scope.contexturl, scope.courseid).then(function(actions) {
-                scope.actions = actions;
-            });
-        }
-    }
-    return {
-        link: link,
-        restrict: 'E',
-        scope: {
-            contexturl: '=',
-            courseid: '='
-        },
-        templateUrl: 'addons/notifications/templates/actions.html',
-    };
-}]);
-
-angular.module('mm.addons.notifications')
-.filter('mmaNotificationsFormat', ["$mmText", function($mmText) {
-  return function(text) {
-    text = text.replace(/-{4,}/ig, '');
-    text = $mmText.replaceNewLines(text, '<br>');
-    return text;
-  };
-}]);
-
-angular.module('mm.addons.notifications')
-.factory('$mmaNotificationsHandlers', ["$log", "$mmaNotifications", "$mmEvents", "$mmSitesManager", "$mmUtil", "mmaNotificationsReadChangedEvent", "mmaNotificationsReadCronEvent", "$mmAddonManager", function($log, $mmaNotifications, $mmEvents, $mmSitesManager, $mmUtil,
-        mmaNotificationsReadChangedEvent, mmaNotificationsReadCronEvent, $mmAddonManager) {
-    $log = $log.getInstance('$mmaNotificationsHandlers');
-    var self = {};
-        self.sideMenuNav = function() {
-        var self = {};
-                self.isEnabled = function() {
-            return $mmaNotifications.isPluginEnabled();
-        };
-                self.getController = function() {
-                        return function($scope) {
-                var $mmPushNotificationsDelegate = $mmAddonManager.get('$mmPushNotificationsDelegate'),
-                    $mmaPushNotifications = $mmAddonManager.get('$mmaPushNotifications'),
-                    readChangedObserver, cronObserver;
-                $scope.icon = 'ion-ios-bell';
-                $scope.title = 'mma.notifications.notifications';
-                $scope.state = 'site.notifications';
-                $scope.class = 'mma-notifications-handler';
-                if ($mmaNotifications.isNotificationCountEnabled(true)) {
-                    $scope.loading = true;
-                    updateUnreadNotificationsCount().finally(function() {
-                        $scope.loading = false;
-                    });
-                    readChangedObserver = $mmEvents.on(mmaNotificationsReadChangedEvent, function(data) {
-                        if (data && $mmSitesManager.isCurrentSite(data.siteid)) {
-                            updateUnreadNotificationsCount(data.siteid);
-                        }
-                    });
-                    cronObserver = $mmEvents.on(mmaNotificationsReadCronEvent, function(data) {
-                        if (data && $mmSitesManager.isCurrentSite(data.siteid)) {
-                            updateUnreadNotificationsCount(data.siteid);
-                        }
-                    });
-                    if ($mmPushNotificationsDelegate) {
-                        $mmPushNotificationsDelegate.registerReceiveHandler('mmaNotifications:sidemenu', function(notification) {
-                            if ($mmUtil.isTrueOrOne(notification.notif) && $mmSitesManager.isCurrentSite(notification.site)) {
-                                updateUnreadNotificationsCount(notification.site);
-                            }
-                        });
-                        $mmPushNotificationsDelegate.registerCounterHandler('mmaNotifications');
-                    }
-                    function updateUnreadNotificationsCount(siteId) {
-                        return $mmaNotifications.getUnreadNotificationsCount().then(function(unread) {
-                            $scope.badge = parseInt(unread, 10) > 0 ? unread : '';
-                            if ($mmaPushNotifications) {
-                                $mmaPushNotifications.updateAddonCounter(siteId, 'mmaNotifications', unread);
-                            }
-                        });
-                    }
-                }
-                $scope.$on('$destroy', function() {
-                    readChangedObserver && readChangedObserver.off && readChangedObserver.off();
-                    cronObserver && cronObserver.off && cronObserver.off();
-                    if ($mmPushNotificationsDelegate) {
-                        $mmPushNotificationsDelegate.unregisterReceiveHandler('mmaNotifications:sidemenu');
-                    }
-                });
-            };
-        };
-                self.execute = function(siteId) {
-            if ($mmSitesManager.isCurrentSite(siteId) && $mmaNotifications.isNotificationCountEnabled(true)) {
-                $mmEvents.trigger(mmaNotificationsReadCronEvent, {
-                    siteid: siteId
-                });
-            }
-        };
-                self.getInterval = function() {
-            return 600000;
-        };
-                self.isSync = function() {
-            return !$mmaNotifications.isNotificationCountEnabled();
-        };
-                self.canManualSync = function() {
-            return true;
-        };
-                self.usesNetwork = function() {
-            return true;
-        };
-        return self;
-    };
-        self.preferences = function() {
-        var self = {};
-                self.isEnabled = function() {
-            return $mmaNotifications.isNotificationPreferencesEnabled();
-        };
-                self.getController = function() {
-            return function($scope) {
-                $scope.title = 'mma.notifications.notificationpreferences';
-                $scope.class = 'mma-notifications-notificationpreferences-handler';
-                $scope.state = 'site.notifications-preferences';
-            };
-        };
-        return self;
-    };
-    return self;
-}]);
-
-angular.module('mm.addons.notifications')
-.factory('$mmaNotifications', ["$q", "$log", "$mmSite", "$mmSitesManager", "$mmUser", "$mmUtil", "mmaNotificationsListLimit", function($q, $log, $mmSite, $mmSitesManager, $mmUser, $mmUtil, mmaNotificationsListLimit) {
-    $log = $log.getInstance('$mmaNotifications');
-    var self = {};
-    function formatNotificationsData(notifications) {
-        angular.forEach(notifications, function(notification) {
-            if (notification.contexturl && notification.contexturl.indexOf('/mod/forum/')) {
-                notification.mobiletext = notification.smallmessage;
-            } else {
-                notification.mobiletext = notification.fullmessage;
-            }
-            var cid = notification.fullmessagehtml.match(/course\/view\.php\?id=([^"]*)/);
-            if (cid && cid[1]) {
-                notification.courseid = cid[1];
-            }
-            $mmUser.getProfile(notification.useridfrom, notification.courseid, true).then(function(user) {
-                notification.profileimageurlfrom = user.profileimageurl;
-            });
-        });
-    }
-        function getNotificationPreferencesCacheKey() {
-        return 'mmaNotifications:notificationPreferences';
-    }
-        self.getNotificationPreferences = function(siteId) {
-        $log.debug('Get notification preferences');
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            var preSets = {
-                    cacheKey: getNotificationPreferencesCacheKey()
-                };
-            return site.read('core_message_get_user_notification_preferences', {}, preSets).then(function(data) {
-                return data.preferences;
-            });
-        });
-    };
-        function getNotificationsCacheKey() {
-        return 'mmaNotifications:list';
-    }
-        self.getNotifications = function(read, limitFrom, limitNumber) {
-        limitFrom = limitFrom || 0;
-        limitNumber = limitNumber || mmaNotificationsListLimit;
-        $log.debug('Get ' + (read ? 'read' : 'unread') + ' notifications from ' + limitFrom + '. Limit: ' + limitNumber);
-        var data = {
-            useridto: $mmSite.getUserId(),
-            useridfrom: 0,
-            type: 'notifications',
-            read: read ? 1 : 0,
-            newestfirst: 1,
-            limitfrom: limitFrom,
-            limitnum: limitNumber
-        };
-        var preSets = {
-            cacheKey: getNotificationsCacheKey()
-        };
-        return $mmSite.read('core_message_get_messages', data, preSets).then(function(response) {
-            if (response.messages) {
-                var notifications = response.messages;
-                formatNotificationsData(notifications);
-                return notifications;
-            } else {
-                return $q.reject();
-            }
-        });
-    };
-        self.getReadNotifications = function(limitFrom, limitNumber) {
-        return self.getNotifications(true, limitFrom, limitNumber);
-    };
-        self.getUnreadNotifications = function(limitFrom, limitNumber) {
-        return self.getNotifications(false, limitFrom, limitNumber);
-    };
-        self.getUnreadNotificationsCount = function(userId, siteId) {
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            if (site.wsAvailable('message_popup_get_unread_popup_notification_count')) {
-                userId = userId || site.getUserId();
-                var params = {
-                        useridto: userId
-                    },
-                    preSets = {
-                        getFromCache: 0,
-                        emergencyCache: 0,
-                        saveToCache: 0,
-                        typeExpected: 'number'
-                    };
-                return site.read('message_popup_get_unread_popup_notification_count', params, preSets).catch(function() {
-                    return 0;
-                });
-            }
-            return self.getNotifications(false, 0, mmaNotificationsListLimit + 1).then(function(unread) {
-                return (unread.length > mmaNotificationsListLimit) ? unread.length + "+" : unread.length;
-            }).catch(function() {
-                return 0;
-            });
-        });
-    };
-        self.markNotificationRead = function(notificationId) {
-        var params = {
-                'messageid': notificationId,
-                'timeread': $mmUtil.timestamp()
-            };
-        return $mmSite.write('core_message_mark_message_read', params);
-    };
-        self.invalidateNotificationPreferences = function(siteId) {
-        return $mmSitesManager.getSite(siteId).then(function(site) {
-            return site.invalidateWsCacheForKey(getNotificationPreferencesCacheKey());
-        });
-    };
-        self.invalidateNotificationsList = function() {
-        return $mmSite.invalidateWsCacheForKey(getNotificationsCacheKey());
-    };
-        self.isNotificationCountEnabled = function(useFallback) {
-        return $mmSite.wsAvailable('message_popup_get_unread_popup_notification_count') ||
-            (useFallback && $mmSite.wsAvailable('core_message_get_messages'));
-    };
-        self.isNotificationPreferencesEnabled = function() {
-        return $mmSite.wsAvailable('core_message_get_user_notification_preferences');
-    };
-        self.isPluginEnabled = function() {
-        return $mmSite.wsAvailable('core_message_get_messages');
-    };
-        self.isPluginEnabledForSite = function(siteid) {
-        return $mmSitesManager.getSite(siteid).then(function(site) {
-            if (!site.wsAvailable('core_message_get_messages')) {
-                return $q.reject();
-            }
-        });
     };
     return self;
 }]);
