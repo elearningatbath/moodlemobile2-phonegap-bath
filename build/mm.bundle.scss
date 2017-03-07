@@ -1861,6 +1861,9 @@ $bar-side-menu-text-color: $bar-content-text !default;
         }
     }
 }
+.mm-site_coursesgrades .item .badge {
+  right: 16px;
+}
 $mma-messages-date-badge: "stable" !default;
 
 // The date displayed in the list.
@@ -1957,9 +1960,6 @@ $mma-messages-date-badge: "stable" !default;
   text-align: center;
 }
 
-.mm-site_coursesgrades .item .badge {
-  right: 16px;
-}
 
 $mma-mod-assign-warning-color:      #c00 !default;
 
