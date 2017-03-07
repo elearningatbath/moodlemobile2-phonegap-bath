@@ -1,6 +1,6 @@
 {
     "app_id" : "uk.ac.bath.moodlemobile",
-    "appname": "University of Bath Moodle Mobile",
+    "appname": "University of Bath : Moodle",
     "versioncode" : "2017",
     "versionname" : "3.2.1",
     "cache_expiration_time" : 300000,
@@ -10,7 +10,7 @@
     "wsextservice" : "local_mobile",
     "gcmpn": "570453131106",
     "customurlscheme": "moodlemobile",
-    "siteurl": "",
+    "siteurl": "https://moodle.bath.ac.uk",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
